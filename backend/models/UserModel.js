@@ -5,7 +5,7 @@ var UserSchema = new mongoose.Schema({
 	lastName: {type: String},
 	email: {type: String, required: true},
 	password: {type: String, required: true},
-	status: {type: Boolean, required: true, default: 1}
+	status: {type: Number, required: true, default: 1} //0,1,2
 }, {timestamps: true});
 
 module.exports = mongoose.model("users", UserSchema);
