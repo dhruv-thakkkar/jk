@@ -1,595 +1,958 @@
 <!DOCTYPE html>
+
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link href='assets/plugins/fontawesome-5.15.2/css/all.min.css' rel='stylesheet'>
-    <link href='assets/plugins/fontawesome-5.15.2/css/fontawesome.min.css' rel='stylesheet'>
-    <link href="assets/plugins/animate/animate.css" rel="stylesheet">
-    <link href="assets/plugins/menuzord/css/menuzord.css" rel="stylesheet">
-    <link href="assets/plugins/menuzord/css/menuzord-animations.css" rel="stylesheet">
-    <link href='assets/plugins/isotope/isotope.min.css' rel='stylesheet'>
-    <link href='assets/plugins/fancybox/jquery.fancybox.min.css' rel='stylesheet'>
-    <link href='assets/plugins/selectric/selectric.css' rel='stylesheet'>
-    <link href='assets/plugins/daterangepicker/css/daterangepicker.css' rel='stylesheet'>
-    <link href='assets/plugins/dzsparallaxer/dzsparallaxer.css' rel='stylesheet'>
-    <link href='assets/plugins/revolution/css/settings.css' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700' rel='stylesheet'>
-    <link href="assets/css/star.css" id="option_style" rel="stylesheet">
-    <title>JK Travel World</title>
-  </head>
-  <body id="body" class="up-scroll">
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="navbar"></div>
-    <!-- Preloader -->
-    <div id="preloader" class="smooth-loader-wrapper">
-      <div class="smooth-loader">
-        <div class="sk-circle">
-          <div class="sk-circle1 sk-child"></div>
-          <div class="sk-circle2 sk-child"></div>
-          <div class="sk-circle3 sk-child"></div>
-          <div class="sk-circle4 sk-child"></div>
-          <div class="sk-circle5 sk-child"></div>
-          <div class="sk-circle6 sk-child"></div>
-          <div class="sk-circle7 sk-child"></div>
-          <div class="sk-circle8 sk-child"></div>
-          <div class="sk-circle9 sk-child"></div>
-          <div class="sk-circle10 sk-child"></div>
-          <div class="sk-circle11 sk-child"></div>
-          <div class="sk-circle12 sk-child"></div>
-        </div>
-      </div>
-    </div>
-  
-    <!-- ====================================
-    ——— HEADER
-    ===================================== -->
-  
-      <!-- Menu Zord -->
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Bootstrap CSS -->
+<link href="assets/css/style.css" type="text/css" rel="stylesheet" />
+<link href="assets/css/bootstrap-datepicker.css" type="text/css" rel="stylesheet" />
+<!-- Favicon -->
+<!-- Favicon and Touch Icons -->
+<link href="assets/images/favicon.png" rel="shortcut icon" type="image/png">
+<link href="assets/images/apple-touch-icon.png" rel="apple-touch-icon">
+<link href="assets/images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+<link href="assets/images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+<link href="assets/images/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+<title>JK Travel World</title>
 
-    <div class="main-wrapper home-main">
-  
-  
-  <!-- ====================================
-  ———	BANNER SECTION
-  ===================================== -->
-  <!-- ====================================
-  ———	SEARCH SECTION
-  ===================================== -->
-  <section class="bg-dark-light py-7">
-    <div class="container">
-      <!-- <div class="row align-items-center">
-        <div class="col-xl-3">
-          <div class="section-title-bg mb-1 mb-lg-3 mb-xl-0">
-            <h2 class="text-white text-uppercase font-weight-bold mb-0">your <span class="text-primary">tours</span></h2>
-          </div>
-        </div>
-      
-      </div> -->
+<style>
+a.btn-action {
+    background: #222;
+    color: #fff;
+    padding: 9px 13px;
+    margin: 0 0 0 15px;
+}
+</style>
+<!-- =======================
+	header Start-->
+<div id="root"></div>
+<div id="navbar"></div>
+<!-- =======================
+	header End--> 
+
+<!-- =======================
+	Main Banner -->
+<section class="p-0 height-700 parallax-bg" style="background:url(assets/images/banner/03.jpg) no-repeat 65% 0%; background-size:cover;">
+  <div class="container h-100">
+    <div class="row justify-content-between align-items-center h-100" >
+      <div class="col-md-8 mb-7">
+        <h4>Lorem ipsum dolor sit amet</h4>
+        <h1 class="display-4 font-weight-bold">Sed ut perspiciatis unde omnis </h1>
+         </div>
     </div>
-  </section>
-  
-  <!-- ====================================
-  ———	TOP DEALS SECTION
-  ===================================== -->
-    <div id="packages"></div>
-  
-  
-  <!-- ====================================
-  ———	COUNTER SECTION
-  ===================================== -->
-  
-  <!-- ====================================
-  ———	PACKAGES SECTION
-  ===================================== -->
-  <section class="py-10">
-    <div class="container">
-      <div class="text-center section-title">
-        <h2 class="text-uppercase font-weight-bold position-relative">
-          <span class="bg-white">
-            Our Packages
-          </span>
-        </h2>
-        <p class="text-capitalize text-center">Ut facilisis facilisis metus quis semper</p>
-      </div>
-  
-      <div id="filters" class="button-group">
-        <button class="button is-checked" data-filter="*">All Places</button>
-        <button class="button" data-filter=".asia">Asia</button>
-        <button class="button" data-filter=".america">America</button>
-        <button class="button" data-filter=".africa">Africa</button>
-      </div>
-  
-      <div class="row grid">
-        <div class="col-md-6 col-lg-4 element-item america">
-          <div class="media media-hoverable justify-content-center mb-2 mb-md-4 mb-lg-6">
-            <a href="single-package-fullwidth.html" class="media-content">
-              <img class="media-img lazyestload" data-src="assets/img/home/packages/packages-1.jpg" src="assets/img/home/packages/packages-1.jpg" alt="Generic placeholder image">
-              <div class="media-object">
-                <h3 class="text-uppercase mb-0">Vestibulum Tour</h3>
-              </div>
-              <div class="media-img-overlay">
-                <div class="overlay-content">
-                  <h3 class="">from <span class="text-primary">$399</span></h3>
-                  <p class="text-white mb-0">
-                    <span class="me-1"><i class="far fa-calendar-alt" aria-hidden="true"></i></span> 27 Jan, 2021
-                  </p>
+  </div>
+</section>
+<!-- =======================
+	Main banner -->
+
+<section class="mt-lg-n9 mt-sm-0 pb-0 z-index-9 booking-search">
+  <div class="container ">
+    <div class="row shadow border-radius-3">
+      <div class="col-md-12 np">
+        <div class="feature-box h-100">
+          <div class="tab_container">
+            <input id="tab1" type="radio" name="tabs" checked>
+            <label for="tab1"><i class="fas fa-utensils"></i><span>Hotels</span></label>
+            <input id="tab2" type="radio" name="tabs">
+            <label for="tab2"><i class="fas fa-helicopter"></i><span>Flights</span></label>
+            <input id="tab3" type="radio" name="tabs">
+            <label for="tab3"><i class="fas fa-car-side"></i><span>Cars</span></label>
+            <input id="tab4" type="radio" name="tabs">
+            <label for="tab4"><i class="fas fa-ship"></i><span>Cruises</span></label>
+            <input id="tab5" type="radio" name="tabs">
+            <label for="tab5"><i class="fas fa-route"></i><span>Tours</span></label>
+            <section id="content1" class="tab-content">
+              <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 padding8">
+                  <div class="form-group"> <span class="fas fa-map-marker-alt"></span>
+                    <input class="form-control" type="text" placeholder="City, Point of Interest or U.S. Zip Code">
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 padding8">
+                  <div class="form-group"> <span class="far fa-calendar-alt"></span>
+                    <input class="form-control" type="text" id="datepicker" autocomplete="off" placeholder="Check-in">
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 padding8">
+                  <div class="form-group"> <span class="far fa-calendar-alt"></span>
+                    <input class="form-control" type="text" id="datepicker-out" autocomplete="off" placeholder="Check-out">
+                  </div>
+                </div>
+                <div class="col-lg-1 col-md-6 col-sm-6 col-xs-12 padding8">
+                  <div class="form-group">
+                    <select class="custom-select select-big">
+                      <option selected="">Rooms</option>
+                      <option value="location1">01</option>
+                      <option value="location2">02</option>
+                      <option value="location3">03</option>
+                      <option value="location4">04</option>
+                      <option value="location5">05</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-1 col-md-6 col-sm-6 col-xs-12 padding8">
+                  <div class="form-group">
+                    <select class="custom-select select-big">
+                      <option selected="">Guests</option>
+                      <option value="location1">01</option>
+                      <option value="location2">02</option>
+                      <option value="location3">03</option>
+                      <option value="location4">04</option>
+                      <option value="location5">05</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 padding8">
+                  <div class="form-group">
+                    <button class="btn btn-primary btn-lg btn-grad" type="submit">Search</button>
+                  </div>
                 </div>
               </div>
-            </a>
+            </section>
+            <section id="content2" class="tab-content">
+              <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 padding8">
+                  <div class="form-group"> <span class="fas fa-map-marker-alt"></span>
+                    <input class="form-control" type="text" placeholder="From : City, Airport, U.S. Zip">
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 padding8">
+                  <div class="form-group"> <span class="fas fa-map-marker-alt"></span>
+                    <input class="form-control" type="text" placeholder="To : City, Airport, U.S. Zip">
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 padding8">
+                  <div class="form-group"> <span class="far fa-calendar-alt"></span>
+                    <input class="form-control" type="text" id="datepicker-1" autocomplete="off" placeholder="Departing">
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 padding8">
+                  <div class="form-group"> <span class="far fa-calendar-alt"></span>
+                    <input class="form-control" type="text" id="datepicker-2" autocomplete="off" placeholder="Returning">
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 padding8">
+                  <div class="form-group">
+                    <button class="btn btn-primary btn-lg btn-grad" type="submit">Search</button>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id="content3" class="tab-content">
+              <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 padding8">
+                  <div class="form-group"> <span class="fas fa-map-marker-alt"></span>
+                    <input class="form-control" type="text" placeholder="Pick-up Location">
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 padding8">
+                  <div class="form-group"> <span class="fas fa-map-marker-alt"></span>
+                    <input class="form-control" type="text" placeholder="Drop-off Location">
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 padding8">
+                  <div class="form-group"> <span class="far fa-calendar-alt"></span>
+                    <input class="form-control" type="text" id="datepicker-3" autocomplete="off" placeholder="Pick-up Date">
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 padding8">
+                  <div class="form-group"> <span class="far fa-calendar-alt"></span>
+                    <input class="form-control" type="text" id="datepicker-4" autocomplete="off" placeholder="Drop-ff Date">
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 padding8">
+                  <div class="form-group">
+                    <button class="btn btn-primary btn-lg btn-grad" type="submit">Search</button>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id="content4" class="tab-content">
+              <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 padding8">
+                  <div class="form-group"> <span class="fas fa-map-marker-alt"></span>
+                    <input class="form-control" type="text" placeholder="enter a destination or hotel name">
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 padding8">
+                  <div class="form-group"> <span class="far fa-calendar-alt"></span>
+                    <input class="form-control" type="text" id="datepicker-5" autocomplete="off" placeholder="Departure Date">
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 padding8">
+                  <div class="form-group">
+                    <select class="custom-select select-big">
+                      <option selected="">Cruise Length</option>
+                      <option value="location1">1-2 Night</option>
+                      <option value="location2">2-3 Night</option>
+                      <option value="location3">3-4 Night</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 padding8">
+                  <div class="form-group">
+                    <select class="custom-select select-big">
+                      <option selected="">Cruise Line</option>
+                      <option value="location1">Azamara Club Cruises</option>
+                      <option value="location2">Celebrity Cruises</option>
+                      <option value="location3">Cruise & Maritime</option>
+                      <option value="location4">Oceania Cruises</option>
+                      <option value="location5">Peter Deilmann Cruises</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 padding8">
+                  <div class="form-group">
+                    <button class="btn btn-primary btn-lg btn-grad" type="submit">Search</button>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id="content5" class="tab-content">
+              <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 padding8">
+                  <div class="form-group"> <span class="fas fa-map-marker-alt"></span>
+                    <input class="form-control" type="text" placeholder="From : City, Airport, U.S. Zip">
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 padding8">
+                  <div class="form-group"> <span class="fas fa-map-marker-alt"></span>
+                    <input class="form-control" type="text" placeholder="To : City, Airport, U.S. Zip">
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 padding8">
+                  <div class="form-group"> <span class="far fa-calendar-alt"></span>
+                    <input class="form-control" type="text" id="datepicker-6" autocomplete="off" placeholder="Departing">
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 padding8">
+                  <div class="form-group"> <span class="far fa-calendar-alt"></span>
+                    <input class="form-control" type="text" id="datepicker-7" autocomplete="off" placeholder="Returning">
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 padding8">
+                  <div class="form-group">
+                    <button class="btn btn-primary btn-lg btn-grad" type="submit">Search</button>
+                  </div>
+                </div>
+              </div>
+              </p>
+            </section>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="Categories pt80 pb60">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-md-8">
+        <p class="subtitle text-secondary nopadding">MOST POPULAR CITIES</p>
+        <h1 class="paddtop1 font-weight lspace-sm">Popular Destination</h1>
+      </div>
+      <div class="col-md-4 d-lg-flex align-items-center justify-content-end"><a href="assets/#" class="blist text-sm ml-2"> See all cities<i class="fas fa-angle-double-right ml-2"></i></a></div>
+    </div>
+    <div class="row">
+      <div class="col-md-6"> <a href="assets/#">
+        <div class="list-mig-like-com">
+          <div class="list-mig-lc-img"> <img src="assets/images/tour/home.jpg" alt=""> </div>
+          <div class="list-mig-lc-con">
+            <h5>United States</h5>
+            <p>81 Cities </p>
+          </div>
+        </div>
+        </a> </div>
+      <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-6"> <a href="assets/#">
+            <div class="list-mig-like-com">
+              <div class="list-mig-lc-img"> <img src="assets/images/tour/home2.jpg" alt=""> </div>
+              <div class="list-mig-lc-con list-mig-lc-con2">
+                <h5>United Kingdom</h5>
+                <p>81 Cities </p>
+              </div>
+            </div>
+            </a> </div>
+          <div class="col-md-6"> <a href="assets/#">
+            <div class="list-mig-like-com">
+              <div class="list-mig-lc-img"> <img src="assets/images/tour/home3.jpg" alt=""> </div>
+              <div class="list-mig-lc-con list-mig-lc-con2">
+                <h5>Australia</h5>
+                <p>81 Cities </p>
+              </div>
+            </div>
+            </a> </div>
+          <div class="col-md-6"> <a href="assets/#">
+            <div class="list-mig-like-com">
+              <div class="list-mig-lc-img"> <img src="assets/images/tour/home4.jpg" alt=""> </div>
+              <div class="list-mig-lc-con list-mig-lc-con2">
+                <h5>Germany</h5>
+                <p>81 Cities </p>
+              </div>
+            </div>
+            </a> </div>
+          <div class="col-md-6"> <a href="assets/#">
+            <div class="list-mig-like-com">
+              <div class="list-mig-lc-img"> <img src="assets/images/tour/home1.jpg" alt=""> </div>
+              <div class="list-mig-lc-con list-mig-lc-con2">
+                <h5>India</h5>
+                <p>81 Cities </p>
+              </div>
+            </div>
+            </a> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="grayBG pt80 pb80">
+  <div class="container ">
+    <div class="row">
+      <div class="col-md-8 mx-auto text-center mb-5">
+        <h2 class="title text-center">Our Services</h2>
+        <p>Sorem ipsum dolor sit amet, consectetur adipisicing Suscipit votas aperiam Sorem ipsum dolor consectur adipisicing elit.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="feature-box h-100 text-center px-4 py-5">
+          <div class="feature-box-icon"><img class="w-25" src="assets/images/tour/check-mark.svg" alt=""></div>
+          <h3 class="feature-box-title">Hotel Booking</h3>
+          <p class="feature-box-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean condimentum, eros eu tristique dictum, neque lorem laoreet purus</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-box h-100 text-center all-text-white bg-grad px-4 py-5 border-radius-3">
+          <div class="feature-box-icon"><img class="w-25" src="assets/images/tour/editor.svg" alt=""></div>
+          <h3 class="feature-box-title">Ticket Booking</h3>
+          <p class="feature-box-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean condimentum, eros eu tristique dictum, neque lorem laoreet</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-box h-100 text-center px-4 py-5">
+          <div class="feature-box-icon"><img class="w-25" src="assets/images/tour/envelope.svg" alt=""></div>
+          <h3 class="feature-box-title">Amazing Tour</h3>
+          <p class="feature-box-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean condimentum, eros eu tristique dictum, neque lorem laoreet </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<section class="Categories pt80 pb60 ">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-md-8">
+        <p class="subtitle text-secondary nopadding">Stay and eat like a local</p>
+        <h1 class="paddtop1 font-weight lspace-sm">Popular Hotels</h1>
+      </div>
+      <div class="col-md-4 d-lg-flex align-items-center justify-content-end"><a href="assets/#" class="blist text-sm ml-2"> See all Hotels<i class="fas fa-angle-double-right ml-2"></i></a></div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+        <div class="listroBox">
+          <figure> <a href="assets/hotel-detailed.html" class="wishlist_bt"></a> <a href="assets/hotel-detailed.html"><img src="assets/images/hotels/room5.jpg" class="img-fluid" alt="" >
+            <div class="read_more"><span>Read more</span></div>
+            </a> </figure>
+          <div class="listroBoxmain">
+            <h3><a href="assets/hotel-detailed.html">Modern, Well-Appointed Room</a></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+            <a class="address" href="assets/#">Get directions</a> </div>
+          <ul>
+            <li>
+              <p class="card-text text-muted"><span class="h4 text-primary">$80</span> / night</p>
+            </li>
+            <li>
+              <div class="R_retings">
+                <div class="list-rat-ch list-room-rati"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+        <div class="listroBox">
+          <figure> <a href="assets/hotel-detailed.html" class="wishlist_bt"></a> <a href="assets/hotel-detailed.html"><img src="assets/images/hotels/room1.jpg" class="img-fluid" alt="" >
+            <div class="read_more"><span>Read more</span></div>
+            </a> </figure>
+          <div class="listroBoxmain">
+            <h3><a href="assets/hotel-detailed.html">Modern, Well-Appointed Room</a></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+            <a class="address" href="assets/#">Get directions</a> </div>
+          <ul>
+            <li>
+              <p class="card-text text-muted"><span class="h4 text-primary">$80</span> / night</p>
+            </li>
+            <li>
+              <div class="R_retings">
+                <div class="list-rat-ch list-room-rati"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+        <div class="listroBox">
+          <figure> <a href="assets/hotel-detailed.html" class="wishlist_bt"></a> <a href="assets/hotel-detailed.html"><img src="assets/images/hotels/room2.jpg" class="img-fluid" alt="" >
+            <div class="read_more"><span>Read more</span></div>
+            </a> </figure>
+          <div class="listroBoxmain">
+            <h3><a href="assets/hotel-detailed.html">Modern, Well-Appointed Room</a></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+            <a class="address" href="assets/#">Get directions</a> </div>
+          <ul>
+            <li>
+              <p class="card-text text-muted"><span class="h4 text-primary">$80</span> / night</p>
+            </li>
+            <li>
+              <div class="R_retings">
+                <div class="list-rat-ch list-room-rati"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+        <div class="listroBox">
+          <figure> <a href="assets/hotel-detailed.html" class="wishlist_bt"></a> <a href="assets/hotel-detailed.html"><img src="assets/images/hotels/room7.jpg" class="img-fluid" alt="" >
+            <div class="read_more"><span>Read more</span></div>
+            </a> </figure>
+          <div class="listroBoxmain">
+            <h3><a href="assets/hotel-detailed.html">Modern, Well-Appointed Room</a></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+            <a class="address" href="assets/#">Get directions</a> </div>
+          <ul>
+            <li>
+              <p class="card-text text-muted"><span class="h4 text-primary">$80</span> / night</p>
+            </li>
+            <li>
+              <div class="R_retings">
+                <div class="list-rat-ch list-room-rati"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+        <div class="listroBox">
+          <figure> <a href="assets/hotel-detailed.html" class="wishlist_bt"></a> <a href="assets/hotel-detailed.html"><img src="assets/images/hotels/room8.jpg" class="img-fluid" alt="" >
+            <div class="read_more"><span>Read more</span></div>
+            </a> </figure>
+          <div class="listroBoxmain">
+            <h3><a href="assets/hotel-detailed.html">Modern, Well-Appointed Room</a></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+            <a class="address" href="assets/#">Get directions</a> </div>
+          <ul>
+            <li>
+              <p class="card-text text-muted"><span class="h4 text-primary">$80</span> / night</p>
+            </li>
+            <li>
+              <div class="R_retings">
+                <div class="list-rat-ch list-room-rati"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+        <div class="listroBox">
+          <figure> <a href="assets/hotel-detailed.html" class="wishlist_bt"></a> <a href="assets/hotel-detailed.html"><img src="assets/images/hotels/room6.jpg" class="img-fluid" alt="" >
+            <div class="read_more"><span>Read more</span></div>
+            </a> </figure>
+          <div class="listroBoxmain">
+            <h3><a href="assets/hotel-detailed.html">Modern, Well-Appointed Room</a></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+            <a class="address" href="assets/#">Get directions</a> </div>
+          <ul>
+            <li>
+              <p class="card-text text-muted"><span class="h4 text-primary">$80</span> / night</p>
+            </li>
+            <li>
+              <div class="R_retings">
+                <div class="list-rat-ch list-room-rati"> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =======================
+	service -->
+<section class="service pt80 pb80 service-home">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-8 mx-auto">
+        <div class="title text-center">
+          <h2>Did you know?</h2>
+          <p class="mb-0">Mauris ullamcorper nibh quis leo ultrices in hendrerit velit tristiqueut augue in nulla lacinia bibendum liberoras rutrum ac purus ut tristique. Nullam placerat lacinia dolor quis pretium. Phasellus vitae lacinia quam</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 mt-30">
+        <div class="featureBox icon-grad h-100">
+          <div class="feature-box-icon"><i class="fas fa-route"></i></div>
+          <h3 class="feature-box-title">Best Travel Agent</h3>
+          <p class="feature-box-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <a class="mt-3" href="assets/#">See more!</a> </div>
+      </div>
+      <div class="col-md-4 mt-30">
+        <div class="featureBox icon-grad h-100">
+          <div class="feature-box-icon"><i class="fab fa-avianex"></i></div>
+          <h3 class="feature-box-title">Trust & Safety</h3>
+          <p class="feature-box-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <a class="mt-3" href="assets/#">See more!</a> </div>
+      </div>
+      <div class="col-md-4 mt-30">
+        <div class="featureBox icon-grad h-100">
+          <div class="feature-box-icon"><i class="fas fa-bullhorn"></i></div>
+          <h3 class="feature-box-title">Best Price Guarantee</h3>
+          <p class="feature-box-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <a class="mt-3" href="assets/#">See more!</a> </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- =======================
+	service -->
+
+<section class="Categories pt80 pb60 Categories-home">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-md-8">
+        <p class="subtitle text-secondary nopadding">Stay and eat like a local</p>
+        <h1 class="paddtop1 font-weight lspace-sm">Latest Cruises</h1>
+      </div>
+      <div class="col-md-4 d-lg-flex align-items-center justify-content-end"><a href="assets/#" class="blist text-sm ml-2"> See all Cruises<i class="fas fa-angle-double-right ml-2"></i></a></div>
+    </div>
+    <div class="row">
+      <div class="swiper-container guides-slider-home-cruises"> 
+        <!-- Additional required wrapper-->
+        <div class="swiper-wrapper"> 
+          <!-- Slides-->
+          
+          <div class="swiper-slide h-auto px-2">
+            <div class="listing-item ">
+              <article class="TravelGo-category-listing fl-wrap">
+                <div class="TravelGo-category-img"> <a href="assets/hotel-detailed.html"><img src="assets/images/cruises/1.jpg" alt=""></a>
+                  <div class="TravelGo-category-opt">
+                    <div class="listing-rating card-popup-rainingvis" data-starrating2="5"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                    <div class="rate-class-name">
+                      <div class="score"><strong>Very Good</strong>27 Reviews </div>
+                      <span>5.0</span> </div>
+                  </div>
+                </div>
+                <div class="TravelGo-category-content fl-wrap title-sin_item">
+                  <div class="TravelGo-category-content-title fl-wrap">
+                    <div class="TravelGo-category-content-title-item">
+                      <h3 class="title-sin_map"><a href="assets/hotel-detailed.html">Asia & African Cruise</a></h3>
+                      <div class="TravelGo-category-location fl-wrap"><a href="assets/#" class="map-item"><i class="fas fa-map-marker-alt"></i> 27th Brooklyn New York, USA</a> <span>$ 200</span> </div>
+                    </div>
+                  </div>
+                  <p>Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
+                  <ul class="facilities-list fl-wrap">
+                    <li><i class="fas fa-wifi"></i><span>Free WiFi</span></li>
+                    <li><i class="fas fa-parking"></i><span>Parking</span></li>
+                    <li><i class="fas fa-smoking-ban"></i><span>Non-smoking Rooms</span></li>
+                    <li><i class="fas fa-utensils"></i><span> Restaurant</span></li>
+                  </ul>
+                  <div class="TravelGo-category-footer fl-wrap">
+                    <div class="TravelGo-category-price btn-grad"><span>2 days 3 nights</span></div>
+                    <div class="TravelGo-opt-list"> <a href="assets/#" class="single-map-item"><i class="fas fa-map-marker-alt"></i><span class="TravelGo-opt-tooltip">On the map</span></a> <a href="assets/#" class="TravelGo-js-favorite"><i class="fas fa-heart"></i><span class="TravelGo-opt-tooltip">Save</span></a> <a href="assets/#" class="TravelGo-js-booking"><i class="fas fa-retweet"></i><span class="TravelGo-opt-tooltip">Find Directions</span></a> </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="swiper-slide h-auto px-2">
+            <div class="listing-item ">
+              <article class="TravelGo-category-listing fl-wrap">
+                <div class="TravelGo-category-img"> <a href="assets/hotel-detailed.html"><img src="assets/images/cruises/2.jpg" alt=""></a>
+                  <div class="TravelGo-category-opt">
+                    <div class="listing-rating card-popup-rainingvis" data-starrating2="5"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                    <div class="rate-class-name">
+                      <div class="score"><strong>Very Good</strong>27 Reviews </div>
+                      <span>5.0</span> </div>
+                  </div>
+                </div>
+                <div class="TravelGo-category-content fl-wrap title-sin_item">
+                  <div class="TravelGo-category-content-title fl-wrap">
+                    <div class="TravelGo-category-content-title-item">
+                      <h3 class="title-sin_map"><a href="assets/hotel-detailed.html">Asia & African Cruise</a></h3>
+                      <div class="TravelGo-category-location fl-wrap"><a href="assets/#" class="map-item"><i class="fas fa-map-marker-alt"></i> 27th Brooklyn New York, USA</a> <span>$ 200</span> </div>
+                    </div>
+                  </div>
+                  <p>Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
+                  <ul class="facilities-list fl-wrap">
+                    <li><i class="fas fa-wifi"></i><span>Free WiFi</span></li>
+                    <li><i class="fas fa-parking"></i><span>Parking</span></li>
+                    <li><i class="fas fa-smoking-ban"></i><span>Non-smoking Rooms</span></li>
+                    <li><i class="fas fa-utensils"></i><span> Restaurant</span></li>
+                  </ul>
+                  <div class="TravelGo-category-footer fl-wrap">
+                    <div class="TravelGo-category-price btn-grad"><span>2 days 3 nights</span></div>
+                    <div class="TravelGo-opt-list"> <a href="assets/#" class="single-map-item"><i class="fas fa-map-marker-alt"></i><span class="TravelGo-opt-tooltip">On the map</span></a> <a href="assets/#" class="TravelGo-js-favorite"><i class="fas fa-heart"></i><span class="TravelGo-opt-tooltip">Save</span></a> <a href="assets/#" class="TravelGo-js-booking"><i class="fas fa-retweet"></i><span class="TravelGo-opt-tooltip">Find Directions</span></a> </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="swiper-slide h-auto px-2">
+            <div class="listing-item ">
+              <article class="TravelGo-category-listing fl-wrap">
+                <div class="TravelGo-category-img"> <a href="assets/hotel-detailed.html"><img src="assets/images/cruises/3.jpg" alt=""></a>
+                  <div class="TravelGo-category-opt">
+                    <div class="listing-rating card-popup-rainingvis" data-starrating2="5"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                    <div class="rate-class-name">
+                      <div class="score"><strong>Very Good</strong>27 Reviews </div>
+                      <span>5.0</span> </div>
+                  </div>
+                </div>
+                <div class="TravelGo-category-content fl-wrap title-sin_item">
+                  <div class="TravelGo-category-content-title fl-wrap">
+                    <div class="TravelGo-category-content-title-item">
+                      <h3 class="title-sin_map"><a href="assets/hotel-detailed.html">Asia & African Cruise</a></h3>
+                      <div class="TravelGo-category-location fl-wrap"><a href="assets/#" class="map-item"><i class="fas fa-map-marker-alt"></i> 27th Brooklyn New York, USA</a> <span>$ 200</span> </div>
+                    </div>
+                  </div>
+                  <p>Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
+                  <ul class="facilities-list fl-wrap">
+                    <li><i class="fas fa-wifi"></i><span>Free WiFi</span></li>
+                    <li><i class="fas fa-parking"></i><span>Parking</span></li>
+                    <li><i class="fas fa-smoking-ban"></i><span>Non-smoking Rooms</span></li>
+                    <li><i class="fas fa-utensils"></i><span> Restaurant</span></li>
+                  </ul>
+                  <div class="TravelGo-category-footer fl-wrap">
+                    <div class="TravelGo-category-price btn-grad"><span>2 days 3 nights</span></div>
+                    <div class="TravelGo-opt-list"> <a href="assets/#" class="single-map-item"><i class="fas fa-map-marker-alt"></i><span class="TravelGo-opt-tooltip">On the map</span></a> <a href="assets/#" class="TravelGo-js-favorite"><i class="fas fa-heart"></i><span class="TravelGo-opt-tooltip">Save</span></a> <a href="assets/#" class="TravelGo-js-booking"><i class="fas fa-retweet"></i><span class="TravelGo-opt-tooltip">Find Directions</span></a> </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="swiper-slide h-auto px-2">
+            <div class="listing-item ">
+              <article class="TravelGo-category-listing fl-wrap">
+                <div class="TravelGo-category-img"> <a href="assets/hotel-detailed.html"><img src="assets/images/cruises/4.jpg" alt=""></a>
+                  <div class="TravelGo-category-opt">
+                    <div class="listing-rating card-popup-rainingvis" data-starrating2="5"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                    <div class="rate-class-name">
+                      <div class="score"><strong>Very Good</strong>27 Reviews </div>
+                      <span>5.0</span> </div>
+                  </div>
+                </div>
+                <div class="TravelGo-category-content fl-wrap title-sin_item">
+                  <div class="TravelGo-category-content-title fl-wrap">
+                    <div class="TravelGo-category-content-title-item">
+                      <h3 class="title-sin_map"><a href="assets/hotel-detailed.html">Asia & African Cruise</a></h3>
+                      <div class="TravelGo-category-location fl-wrap"><a href="assets/#" class="map-item"><i class="fas fa-map-marker-alt"></i> 27th Brooklyn New York, USA</a> <span>$ 200</span> </div>
+                    </div>
+                  </div>
+                  <p>Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
+                  <ul class="facilities-list fl-wrap">
+                    <li><i class="fas fa-wifi"></i><span>Free WiFi</span></li>
+                    <li><i class="fas fa-parking"></i><span>Parking</span></li>
+                    <li><i class="fas fa-smoking-ban"></i><span>Non-smoking Rooms</span></li>
+                    <li><i class="fas fa-utensils"></i><span> Restaurant</span></li>
+                  </ul>
+                  <div class="TravelGo-category-footer fl-wrap">
+                    <div class="TravelGo-category-price btn-grad"><span>2 days 3 nights</span></div>
+                    <div class="TravelGo-opt-list"> <a href="assets/#" class="single-map-item"><i class="fas fa-map-marker-alt"></i><span class="TravelGo-opt-tooltip">On the map</span></a> <a href="assets/#" class="TravelGo-js-favorite"><i class="fas fa-heart"></i><span class="TravelGo-opt-tooltip">Save</span></a> <a href="assets/#" class="TravelGo-js-booking"><i class="fas fa-retweet"></i><span class="TravelGo-opt-tooltip">Find Directions</span></a> </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="swiper-slide h-auto px-2">
+            <div class="listing-item ">
+              <article class="TravelGo-category-listing fl-wrap">
+                <div class="TravelGo-category-img"> <a href="assets/hotel-detailed.html"><img src="assets/images/cruises/5.jpg" alt=""></a>
+                  <div class="TravelGo-category-opt">
+                    <div class="listing-rating card-popup-rainingvis" data-starrating2="5"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                    <div class="rate-class-name">
+                      <div class="score"><strong>Very Good</strong>27 Reviews </div>
+                      <span>5.0</span> </div>
+                  </div>
+                </div>
+                <div class="TravelGo-category-content fl-wrap title-sin_item">
+                  <div class="TravelGo-category-content-title fl-wrap">
+                    <div class="TravelGo-category-content-title-item">
+                      <h3 class="title-sin_map"><a href="assets/hotel-detailed.html">Asia & African Cruise</a></h3>
+                      <div class="TravelGo-category-location fl-wrap"><a href="assets/#" class="map-item"><i class="fas fa-map-marker-alt"></i> 27th Brooklyn New York, USA</a> <span>$ 200</span> </div>
+                    </div>
+                  </div>
+                  <p>Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
+                  <ul class="facilities-list fl-wrap">
+                    <li><i class="fas fa-wifi"></i><span>Free WiFi</span></li>
+                    <li><i class="fas fa-parking"></i><span>Parking</span></li>
+                    <li><i class="fas fa-smoking-ban"></i><span>Non-smoking Rooms</span></li>
+                    <li><i class="fas fa-utensils"></i><span> Restaurant</span></li>
+                  </ul>
+                  <div class="TravelGo-category-footer fl-wrap">
+                    <div class="TravelGo-category-price btn-grad"><span>2 days 3 nights</span></div>
+                    <div class="TravelGo-opt-list"> <a href="assets/#" class="single-map-item"><i class="fas fa-map-marker-alt"></i><span class="TravelGo-opt-tooltip">On the map</span></a> <a href="assets/#" class="TravelGo-js-favorite"><i class="fas fa-heart"></i><span class="TravelGo-opt-tooltip">Save</span></a> <a href="assets/#" class="TravelGo-js-booking"><i class="fas fa-retweet"></i><span class="TravelGo-opt-tooltip">Find Directions</span></a> </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="swiper-slide h-auto px-2">
+            <div class="listing-item ">
+              <article class="TravelGo-category-listing fl-wrap">
+                <div class="TravelGo-category-img"> <a href="assets/hotel-detailed.html"><img src="assets/images/cruises/6.jpg" alt=""></a>
+                  <div class="TravelGo-category-opt">
+                    <div class="listing-rating card-popup-rainingvis" data-starrating2="5"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                    <div class="rate-class-name">
+                      <div class="score"><strong>Very Good</strong>27 Reviews </div>
+                      <span>5.0</span> </div>
+                  </div>
+                </div>
+                <div class="TravelGo-category-content fl-wrap title-sin_item">
+                  <div class="TravelGo-category-content-title fl-wrap">
+                    <div class="TravelGo-category-content-title-item">
+                      <h3 class="title-sin_map"><a href="assets/hotel-detailed.html">Asia & African Cruise</a></h3>
+                      <div class="TravelGo-category-location fl-wrap"><a href="assets/#" class="map-item"><i class="fas fa-map-marker-alt"></i> 27th Brooklyn New York, USA</a> <span>$ 200</span> </div>
+                    </div>
+                  </div>
+                  <p>Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
+                  <ul class="facilities-list fl-wrap">
+                    <li><i class="fas fa-wifi"></i><span>Free WiFi</span></li>
+                    <li><i class="fas fa-parking"></i><span>Parking</span></li>
+                    <li><i class="fas fa-smoking-ban"></i><span>Non-smoking Rooms</span></li>
+                    <li><i class="fas fa-utensils"></i><span> Restaurant</span></li>
+                  </ul>
+                  <div class="TravelGo-category-footer fl-wrap">
+                    <div class="TravelGo-category-price btn-grad"><span>2 days 3 nights</span></div>
+                    <div class="TravelGo-opt-list"> <a href="assets/#" class="single-map-item"><i class="fas fa-map-marker-alt"></i><span class="TravelGo-opt-tooltip">On the map</span></a> <a href="assets/#" class="TravelGo-js-favorite"><i class="fas fa-heart"></i><span class="TravelGo-opt-tooltip">Save</span></a> <a href="assets/#" class="TravelGo-js-booking"><i class="fas fa-retweet"></i><span class="TravelGo-opt-tooltip">Find Directions</span></a> </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination d-md-none"> </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="bg-light pt80 pb60 solutions">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 mx-auto text-center mb-5">
+        <h2 class="title text-center">Why Choose Us</h2>
+        <p>Sorem ipsum dolor sit amet, consectetur adipisicing Suscipit votas aperiam Sorem ipsum dolor consectur adipisicing elit.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
+        <div class="shadow-hover h-100 bg-white px-5 pt-0 pb-5 text-center up-on-hover"> <span class="alt-font text-light-gray display-2 font-italic opacity-2">01</span> <span class="d-block mb-4"><i class="fas fa-road display-2 text-grad"></i></span> <a class="h5" href="assets/#">Rail Booking</a> </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
+        <div class="shadow-hover h-100 bg-white px-5 pt-0 pb-5 text-center up-on-hover"> <span class="alt-font text-light-gray display-2 font-italic opacity-2">02</span> <span class="d-block mb-4"><i class="fas fa-utensils display-2 text-grad"></i></span> <a class="h5" href="assets/#">Hotel Booking</a> </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
+        <div class="shadow-hover h-100 bg-white px-5 pt-0 pb-5 text-center up-on-hover"> <span class="alt-font text-light-gray display-2 font-italic opacity-2">03</span> <span class="d-block mb-4"><i class="fas fa-ticket-alt display-2 text-grad"></i></span> <a class="h5" href="assets/#">Ticket Booking</a> </div>
+      </div>
+      <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
+        <div class="shadow-hover h-100 bg-white px-5 pt-0 pb-5 text-center up-on-hover"> <span class="alt-font text-light-gray display-2 font-italic opacity-2">04</span> <span class="d-block mb-4"><i class="fas fa-child display-2 text-grad"></i></span> <a class="h5" href="assets/#">Amazing Tour</a> </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="pricing pricing-center whiteBG pb60">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-8 mx-auto mb-5">
+        <div class="title text-center">
+          <h2> Pricing Packages</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing Suscipit votas aperiam Sorem ipsum dolor consectur adipisicing elit.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row"> 
+      <!-- pricing item -->
+      <div class="col-md-4">
+        <div class="pricing-box h-100">
+          <h5>Honeymoon Package</h5>
+          <div class="plan-price"> <span class="price text-grad"> <sup class="text-grad">$</sup>20 </span> / Day </div>
+          <p>4 nights in  Honeymoon Suite.<br>
+            Private luxury airport transfer.<br>
+            Daily breakfast your suite.</p>
+          <a class="btn btn-outline-light mt-4" href="assets/#!">Order now!</a> </div>
+      </div>
+      <!-- pricing item -->
+      <div class="col-md-4 ">
+        <div class="pricing-box h-100 shadow no-border box">
+          <div class="ribbon"><span>POPULAR</span></div>
+          <h5>Family Package</h5>
+          <div class="plan-price"> <span class="price text-grad"> <sup class="text-grad">$</sup>50 </span> / Day </div>
+          <p>4 nights in  Honeymoon Suite.<br>
+            Private luxury airport transfer.<br>
+            Daily breakfast your suite.</p>
+          <a class="btn btn-grad mt-4" href="assets/#!">Order now!</a> </div>
+      </div>
+      <!-- pricing item -->
+      <div class="col-md-4">
+        <div class="pricing-box h-100">
+          <h5>All Inclusive</h5>
+          <div class="plan-price"> <span class="price text-grad"> <sup class="text-grad">$</sup>99 </span> / Day </div>
+          <p>4 nights in  Honeymoon Suite.<br>
+            Private luxury airport transfer.<br>
+            Daily breakfast your suite.</p>
+          <a class="btn btn-outline-light mt-4" href="assets/#!">Order now!</a> </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- =======================
+	newsletter -->
+<section class="bg-light pattern-overlay-1-dark">
+  <div class="container">
+    <div class="col-md-12 col-lg-9 mx-auto p-4 p-sm-5">
+      <div class="text-center px-0 px-sm-5">
+        <p class="mb-3 lead">21,215+ Hotel and Resorts Available!</p>
+        <form>
+          <div class="input-group px-0 px-md-5">
+            <input class="form-control border-radius-right-0 border-right-0 bg-transparent" type="text" name="search" placeholder="Enter destination">
+            <button type="button" class="btn btn-grad mb-0 border-radius-left-0"> <span class=" d-md-block">Search now</span> <span class="d-md-none"><i class="fab fa-paper-plane-o m-0"></i></span> </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- =======================
+	newsletter --> 
+
+<!-- =======================
+	footer  -->
+<footer class="footer footer-dark pt-6 position-relative">
+  <div class="footer-content">
+    <div class="container">
+      <div class="row"> 
+        <!-- Footer widget 1 -->
+        <div class="col-md-3 col-sm-6 order-sm-1">
+          <div class="widget address"> <a href="assets/index.html" class="footer-logo mb-3 d-block"> 
+            <!-- SVG Logo Start --> 
+            <img src="assets/images/logo-footer.png" > 
+            <!-- SVG Logo End --> 
+            </a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        <!-- Footer widget 2 -->
+        <div class="col-md-2 col-sm-4 order-sm-3">
+          <div class="widget">
+            <h6>Quick LInks</h6>
+            <ul class="nav flex-column">
+              <li class="nav-item"><a class="nav-link" href="assets/#">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="assets/#">Contact</a></li>
+              <li class="nav-item"><a class="nav-link" href="assets/index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="assets/#">Blog</a></li>
+              <li class="nav-item"><a class="nav-link" href="assets/#">Portfolio</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Footer widget 3 -->
+        <div class="col-md-2 col-sm-4 order-sm-4">
+          <div class="widget">
+            <h6>Company</h6>
+            <ul class="nav flex-column primary-hover">
+              <li class="nav-item"><a class="nav-link" href="assets/#">Help</a></li>
+              <li class="nav-item"><a class="nav-link" href="assets/#">Careers</a></li>
+              <li class="nav-item"><a class="nav-link" href="assets/index.html">Terms & Conditions</a></li>
+              <li class="nav-item"><a class="nav-link" href="assets/#">Privacy & Policy</a></li>
+              <li class="nav-item"><a class="nav-link" href="assets/#">FAQs</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Footer widget 4 -->
+        <div class="col-md-2 col-sm-4 order-sm-5">
+          <div class="widget">
+            <h6>Support</h6>
+            <ul class="nav flex-column primary-hover">
+              <li class="nav-item"><a class="nav-link" href="assets/#">Documentation</a></li>
+              <li class="nav-item"><a class="nav-link" href="assets/#">Knowledge Base</a></li>
+              <li class="nav-item"><a class="nav-link" href="assets/index.html">Forum</a></li>
+              <li class="nav-item"><a class="nav-link" href="assets/#">Contact</a></li>
+              <li class="nav-item"><a class="nav-link" href="assets/#">Terms of Use</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Footer widget 5 -->
+        <div class="col-md-3 col-sm-6 order-sm-2">
+          <div class="widget address">
+            <ul class="list-unstyled">
+              <li class="media mb-3"><i class="fas fa-map-marked-alt mr-3 display-8"></i>216 Coburn Shahi Road Mumbai, Near Center Road, IL 54785. </li>
+              <li class="media mb-3"><i class="mr-3 display-8 fas fa-headphones-alt"></i> (547) 457-5757 </li>
+              <li class="media mb-3"><i class="mr-3 display-8 far fa-envelope"></i> help@travelGo.com</li>
+              <li class="media mb-3"><i class="mr-3 display-8 far fa-clock"></i>
+                <p>Mon - Fri: <strong>09:00 - 21:00</strong> <br>
+                  Sat & Sun: <strong>Closed</strong></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="divider mt-3"></div>
+  <!--footer copyright -->
+  <div class="footer-copyright py-3">
+    <div class="container">
+      <div class="d-md-flex justify-content-between align-items-center py-3 text-center text-md-left"> 
+        <!-- copyright text -->
+        <div class="copyright-text">©2019 All Rights Reserved by <a href="assets/#!"> TravelGo.</a></div>
+        <!-- copyright links--> 
         
-        <div class="col-md-6 col-lg-4 element-item africa">
-          <div class="media media-hoverable justify-content-center mb-2 mb-md-4 mb-lg-6">
-            <a href="single-package-fullwidth.html" class="media-content">
-              <img class="media-img lazyestload" data-src="assets/img/home/packages/packages-2.jpg" src="assets/img/home/packages/packages-2.jpg" alt="Generic placeholder image">
-              <div class="media-object">
-                <h3 class="text-uppercase mb-0">Maecenas Tour</h3>
-              </div>
-              <div class="media-img-overlay">
-                <div class="overlay-content">
-                  <h3 class="">from <span class="text-primary">$599</span></h3>
-                  <p class="text-white mb-0">
-                    <span class="me-1"><i class="far fa-calendar-alt" aria-hidden="true"></i></span> 09 Feb, 2021
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-  
-        <div class="col-md-6 col-lg-4 element-item asia america">
-          <div class="media media-hoverable justify-content-center mb-2 mb-md-4 mb-lg-6">
-            <a href="single-package-fullwidth.html" class="media-content">
-              <img class="media-img lazyestload" data-src="assets/img/home/packages/packages-3.jpg" src="assets/img/home/packages/packages-3.jpg" alt="Generic placeholder image">
-              <div class="media-object">
-                <h3 class="text-uppercase mb-0">Lobortis Tour</h3>
-              </div>
-              <div class="media-img-overlay">
-                <div class="overlay-content">
-                  <h3 class="">from <span class="text-primary">$299</span></h3>
-                  <p class="text-white mb-0">
-                    <span class="me-1"><i class="far fa-calendar-alt" aria-hidden="true"></i></span> 14 Feb, 2021
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-  
-        <div class="col-md-6 col-lg-4 element-item asia africa">
-          <div class="media media-hoverable justify-content-center mb-2 mb-md-4 mb-lg-0">
-            <a href="single-package-fullwidth.html" class="media-content">
-              <img class="media-img lazyestload" data-src="assets/img/home/packages/packages-4.jpg" src="assets/img/home/packages/packages-4.jpg" alt="Generic placeholder image">
-              <div class="media-object">
-                <h3 class="text-uppercase mb-0">Leo Lacus Tour</h3>
-              </div>
-              <div class="media-img-overlay">
-                <div class="overlay-content">
-                  <h3 class="">from <span class="text-primary">$399</span></h3>
-                  <p class="text-white mb-0">
-                    <span class="me-1"><i class="far fa-calendar-alt" aria-hidden="true"></i></span> 11 Jan, 2021
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-  
-        <div class="col-md-6 col-lg-4 element-item america">
-          <div class="media media-hoverable justify-content-center mb-2 mb-md-0">
-            <a href="single-package-fullwidth.html" class="media-content">
-              <img class="media-img lazyestload" data-src="assets/img/home/packages/packages-5.jpg" src="assets/img/home/packages/packages-5.jpg" alt="Generic placeholder image">
-              <div class="media-object">
-                <h3 class="text-uppercase mb-0">Nullam Tour</h3>
-              </div>
-              <div class="media-img-overlay">
-                <div class="overlay-content">
-                  <h3 class="">from <span class="text-primary">$199</span></h3>
-                  <p class="text-white mb-0">
-                    <span class="me-1"><i class="far fa-calendar-alt" aria-hidden="true"></i></span> 02 Feb, 2021
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-  
-        <div class="col-md-6 col-lg-4 element-item asia africa">
-          <div class="media media-hoverable justify-content-center">
-            <a href="single-package-fullwidth.html" class="media-content">
-              <img class="media-img lazyestload" data-src="assets/img/home/packages/packages-6.jpg" src="assets/img/home/packages/packages-6.jpg" alt="Generic placeholder image">
-              <div class="media-object">
-                <h3 class="text-uppercase mb-0">Hendrerit Tour</h3>
-              </div>
-              <div class="media-img-overlay">
-                <div class="overlay-content">
-                  <h3 class="">from <span class="text-primary">$799</span></h3>
-                  <p class="text-white mb-0">
-                    <span class="me-1"><i class="far fa-calendar-alt" aria-hidden="true"></i></span> 26 Feb, 2021
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
       </div>
     </div>
-  </section>
-  
-  
-  
-    </div><!-- element wrapper ends -->
-  
-      <!-- ====================================
-      ——— FOOTER SECTION
-      ===================================== -->
-      <footer class="footer">
-        <div class="footer-bg-color py-9">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6 col-lg-3 mb-7 mb-lg-0">
-                <a class="d-inline-block" href="index-2.html">
-                  <img class="w-100 mb-6 lazyestload" data-src="assets/img/logo-color-sm.png" src="assets/img/logo-color-sm.png" alt="img">
-                </a>
-                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute</p>
-              </div>
-      
-              <div class="col-md-6 col-lg-3 mt-md-4 mb-7 mb-lg-0">
-                <div class="title-tag">
-                  <h6>Contact us</h6>
-                </div>
-  
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod.</p>
-                <ul class="list-unstyled mb-0">
-                  <li class="media mb-2">
-                    <div class="me-3">
-                      <i class="fa fa-home" aria-hidden="true"></i>
-                    </div>
-                    <div class="media-body">
-                       <a href="contact.html">61 Park Street, Fifth Avenue, NY</a>
-                    </div>
-                  </li>
-  
-                  <li class="media mb-2">
-                    <div class="me-3">
-                      <i class="fas fa-phone-alt" aria-hidden="true"></i>
-                    </div>
-                    <div class="media-body">
-                      <a href="tel:88657524332">[88] 657 524 332</a>
-                    </div>
-                  </li>
-                  
-                  <li class="media">
-                    <div class="me-3">
-                      <i class="far fa-envelope" aria-hidden="true"></i>
-                    </div>
-                    <div class="media-body">
-                      <a href="mailTo:info@star-travel.com">info@star-travel.com</a>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-      
-              <div class="col-md-6 col-lg-3 mt-lg-4 mb-7 mb-md-0">
-                <div class="title-tag pb-1">
-                  <h6>Gallery</h6>
-                </div>
-  
-                <div class="row me-auto gallery mb-2 mb-md-0">
-                  <div class="col-4 mb-3">
-                    <div class="media media-hover">
-                      <div class="content w-100">
-                        <img class="media-img lazyestload" data-src="assets/img/home/gallery/thumb-gallery-1.jpg"
-                          src="assets/img/home/gallery/thumb-gallery-1.jpg" alt="gallery-img">
-                        <a class="media-img-overlay" data-fancybox="footer-gallery" href="assets/img/home/gallery/gallery-1.jpg"></a>
-                      </div>
-                    </div>
-                  </div>
-  
-                  <div class="col-4 mb-3">
-                    <div class="media media-hover">
-                      <div class="content w-100">
-                        <img class="media-img lazyestload" data-src="assets/img/home/gallery/thumb-gallery-2.jpg"
-                          src="assets/img/home/gallery/thumb-gallery-2.jpg" alt="gallery-img">
-                        <a class="media-img-overlay" data-fancybox="footer-gallery" href="assets/img/home/gallery/gallery-2.jpg"></a>
-                      </div>
-                    </div>
-                  </div>
-  
-                  <div class="col-4 mb-3">
-                    <div class="media media-hover">
-                      <div class="content w-100">
-                        <img class="media-img lazyestload" data-src="assets/img/home/gallery/thumb-gallery-3.jpg"
-                          src="assets/img/home/gallery/thumb-gallery-3.jpg" alt="gallery-img">
-                        <a class="media-img-overlay" data-fancybox="footer-gallery" href="assets/img/home/gallery/gallery-3.jpg"></a>
-                      </div>
-                    </div>
-                  </div>
-  
-                  <div class="col-4">
-                    <div class="media media-hover">
-                      <div class="content w-100">
-                        <img class="media-img lazyestload" data-src="assets/img/home/gallery/thumb-gallery-4.jpg"
-                          src="assets/img/home/gallery/thumb-gallery-4.jpg" alt="gallery-img">
-                        <a class="media-img-overlay" data-fancybox="footer-gallery" href="assets/img/home/gallery/gallery-4.jpg"></a>
-                      </div>
-                    </div>
-                  </div>
-  
-                  <div class="col-4">
-                    <div class="media media-hover">
-                      <div class="content w-100">
-                        <img class="media-img lazyestload" data-src="assets/img/home/gallery/thumb-gallery-5.jpg"
-                          src="assets/img/home/gallery/thumb-gallery-5.jpg" alt="gallery-img">
-                        <a class="media-img-overlay" data-fancybox="footer-gallery" href="assets/img/home/gallery/gallery-5.jpg"></a>
-                      </div>
-                    </div>
-                  </div>
-  
-                  <div class="col-4">
-                    <div class="media media-hover">
-                      <div class="content w-100">
-                        <img class="media-img lazyestload" data-src="assets/img/home/gallery/thumb-gallery-6.jpg"
-                          src="assets/img/home/gallery/thumb-gallery-6.jpg" alt="gallery-img">
-                        <a class="media-img-overlay" data-fancybox="footer-gallery" href="assets/img/home/gallery/gallery-6.jpg"></a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-      
-              <div class="col-md-6 col-lg-3 mt-lg-4">
-                <div class="title-tag">
-                  <h6>Newsletter</h6>
-                </div>
-  
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
-  
-                <form class="mb-6" action="https://themes.iamabdus.com/star/3.0/index.html" method="post">
-                  <div class="input-group input-group-sm">
-                    <input type="email" class="form-control form-control-sm form-transparent" required="" placeholder="Enter your email" aria-label="Enter your email">
-                    <button class="btn border-0 btn btn-append hover-bg-primary" type="submit">
-                      <i class="fas fa-long-arrow-alt-right text-white ltr" aria-hidden="true"></i>
-                    </button>
-                  </div>
-                </form>
-  
-                <ul class="list-inline d-flex mb-0">
-                  <li class="me-3 me-lg-2 me-xl-3">
-                    <a class="icon-default icon-border rounded-circle hover-bg-primary" href="javascript:void(0)">
-                      <i class="fab fa-facebook-f text-white" aria-hidden="true"></i>
-                    </a>
-                  </li>
-  
-                  <li class="me-3 me-lg-2 me-xl-3">
-                    <a class="icon-default icon-border rounded-circle hover-bg-primary" href="javascript:void(0)">
-                      <i class="fab fa-twitter text-white" aria-hidden="true"></i>
-                    </a>
-                  </li>
-  
-                  <li class="me-3 me-lg-2 me-xl-3">
-                    <a class="icon-default icon-border rounded-circle hover-bg-primary" href="javascript:void(0)">
-                      <i class="fab fa-google-plus-g text-white" aria-hidden="true"></i>
-                    </a>
-                  </li>
-  
-                  <li class="me-3 me-lg-2 me-xl-3">
-                    <a class="icon-default icon-border rounded-circle hover-bg-primary" href="javascript:void(0)">
-                      <i class="fab fa-pinterest-p text-white" aria-hidden="true"></i>
-                    </a>
-                  </li>
-  
-                  <li class="">
-                    <a class="icon-default icon-border rounded-circle hover-bg-primary" href="javascript:void(0)">
-                      <i class="fab fa-vimeo-v text-white" aria-hidden="true"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      
-        <div class="copyright py-6">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-md-6 order-1 order-md-0">
-                <p class="mb-0 mb-md-0 text-md-start">Copyright &copy; <span id="copy-year"></span> All Rights Reserved by
-                  <a href="http://www.iamabdus.com/" target="_blank">Abdus</a>
-                </p>
-              </div>
-              
-              <div class="col-md-6">
-                <ul class="list-inline text-capitalize d-flex align-items-center justify-content-md-end justify-content-center mb-md-0">
-                  <li class="me-3">
-                    <a href="setting.html">Privacy policy</a>
-                  </li>
-      
-                  <li class="me-3">
-                    <a href="about-us.html">About us</a>
-                  </li>
-      
-                  <li class="me-3">
-                    <a href="contact.html">Support</a>
-                  </li>
-      
-                  <li class="">
-                    <a href="blog-single-right-sidebar.html">Blog</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-        <script>
-          var d = new Date();
-          var year = d.getFullYear();
-          document.getElementById("copy-year").innerHTML = year;
-        </script>
-      </footer>
-  
-    
-      <!-- ====================================
-      ——— MODAL SECTION
-      ===================================== -->
-      <!-- Signup Modal -->
-      <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-label="signupModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header rounded">
-              <h3 class="modal-title text-uppercase font-weight-bold">Create your account</h3>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-  
-            <div class="modal-body">
-              <form class="" action="https://themes.iamabdus.com/star/3.0/index.html" method="post">
-                <div class="mb-3">
-                  <input type="text" class="form-control bg-smoke" required="" placeholder="Full Name">
-                </div>
-  
-                <div class="mb-3">
-                  <input type="email" class="form-control bg-smoke" required="" placeholder="Email">
-                </div>
-      
-                <div class="mb-3">
-                  <input type="password" class="form-control bg-smoke" required="" placeholder="Password">
-                </div>
-      
-                <div class="mb-3 form-check mb-0">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck4">
-                  <label class="form-check-label text-gray-color mb-3" for="exampleCheck4">
-                    I agree to the terms of use and privacy.
-                  </label>
-                </div>
-  
-                <div class="d-grid">
-                  <button type="submit" class="btn btn-primary btn-block text-uppercase">Login</button>
-                </div>
-  
-                <div class="text-uppercase text-center py-3">Or</div>
-  
-                <div class="d-grid">
-                  <button type="submit" class="btn btn-facebook btn-block text-uppercase text-white">Login with facebook</button>
-                </div>
-              </form>
-            </div>
-      
-            <div class="modal-footer justify-content-center">
-              <p class="mb-1">Don’t have an Account? <a href="javascript:void(0)">Sign up</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-  
-      <!-- Login Modal -->
-      <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-label="loginModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header rounded">
-              <h3 class="modal-title text-uppercase font-weight-bold">Log in to your account</h3>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-  
-            <div class="modal-body">
-              <form class="" action="https://themes.iamabdus.com/star/3.0/index.html" method="post">
-                <div class="mb-3">
-                  <input type="email" class="form-control bg-smoke" required="" placeholder="Email">
-                </div>
-  
-                <div class="mb-3">
-                  <input type="password" class="form-control bg-smoke" required="" placeholder="Password">
-                </div>
-  
-                <div class="mb-3 form-check mb-0">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck5">
-                  <label class="form-check-label text-gray-color mb-3" for="exampleCheck5">
-                    Remember me
-                  </label>
-                  <a class="pull-right" href="javascript:void(0)">Fogot Password?</a>
-               </div>
-  
-               <div class="d-grid">
-                <button type="submit" class="btn btn-primary text-uppercase">Login</button>
-               </div>
-  
-                <div class="text-uppercase text-center py-3">Or</div>
-  
-                <div class="d-grid">
-                  <button type="submit" class="btn btn-facebook text-uppercase text-white">Login with facebook</button>
-                 </div>
-              </form>
-            </div>
-  
-            <div class="modal-footer justify-content-center">
-              <p class="mb-1">Don’t have an Account? <a href="javascript:void(0)">Sign up</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-  
-      <!-- INQUIRY IN MODAL -->
-      <div class="modal fade" id="inquiry" tabindex="-1" role="dialog" aria-label="inquiryModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header rounded">
-              <h3 class="modal-title text-uppercase font-weight-bold">Inquiry about tour</h3>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-  
-            <div class="modal-body pb-3">
-              <form class="" action="https://themes.iamabdus.com/star/3.0/index.html" method="post">
-                <div class="mb-3">
-                  <input type="text" class="form-control bg-smoke" required="" placeholder="Your Name">
-                </div>
-  
-                <div class="mb-3">
-                  <input type="email" class="form-control bg-smoke" required="" placeholder="Your Email">
-                </div>
-      
-                <div class="mb-3">
-                  <input type="number" class="form-control bg-smoke" required="" placeholder="Phone Number">
-                </div>
-  
-                <div class="mb-3">
-                  <textarea class="form-control bg-smoke" rows="6" placeholder="Message"></textarea>
-                </div>
-      
-                <button type="submit" class="btn btn-primary text-uppercase">Submit</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-  
-      <!-- Javascript -->
-      <script src="assets/plugins/jquery/jquery-3.4.1.min.js"></script>
-      <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-      <script src="assets/plugins/menuzord/js/menuzord.js"></script>
-      
-      <script src='assets/plugins/isotope/isotope.min.js'></script>
-      <script src='assets/plugins/images-loaded/js/imagesloaded.pkgd.min.js'></script>
-      <script src='assets/plugins/fancybox/jquery.fancybox.min.js'></script>
-      
-      <script src='assets/plugins/selectric/jquery.selectric.min.js'></script>
-      <script src='assets/plugins/daterangepicker/js/moment.min.js'></script>
-      <script src='assets/plugins/daterangepicker/js/daterangepicker.min.js'></script>
-      
-      <script src="assets/plugins/lazyestload/lazyestload.js"></script>
-      <script src='assets/plugins/dzsparallaxer/dzsparallaxer.js'></script>
-      
-      
-      
-      
-      
-      <script src='assets/plugins/revolution/js/jquery.themepunch.tools.min.js'></script>
-      <script src="assets/plugins/smoothscroll/SmoothScroll.js"></script>
-      
-      <script src="assets/js/star.js"></script>
-  </body>
-  
+  </div>
+</footer>
+<!-- =======================
+	footer  --> 
+
+<!-- Optional JavaScript --> 
+<!-- jQuery first, then Popper.js, then Bootstrap JS --> 
+<script src="assets/js/jquery.min.js" type="text/javascript"></script> 
+<script src="assets/js/popper.min.js" type="text/javascript"></script> 
+<script src="assets/js/bootstrap.min.js" type="text/javascript"></script> 
+<script src="assets/js/functions.js" type="text/javascript"></script> 
+<script src="assets/js/owl.carousel.min.js" type="text/javascript"></script> 
+<script src="assets/js/slick.js" type="text/javascript"></script> 
+<script src="assets/js/swiper.min.js" type="text/javascript"></script> 
+<script src="assets/js/main.js" type="text/javascript"></script> 
+<script src="assets/js/jquery.fancybox.min.js" type="text/javascript"></script> 
+<script src="assets/js/bootstrap-datepicker.min.js" type="text/javascript"></script> 
+<script src="assets/js/jquery-ui.min.js" type="text/javascript"></script>
+</body>
+
 </html>
