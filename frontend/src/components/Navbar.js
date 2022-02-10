@@ -1,6 +1,8 @@
 
 
 import React from "react";
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
 return (
 <header className="header-static navbar-sticky navbar-light shadow">
@@ -40,7 +42,10 @@ return (
             <div className="d-flex align-items-center">
                <div className="dropdown">
                   <a className="dropdown-toggle" href="assets/#" role="button" id="dropdownAccount" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i className="far fa-user mr-2"></i>Account </a>
-                  <div className="dropdown-menu mt-2 shadow" aria-labelledby="dropdownAccount"> <a className="dropdown-item" href="assets/sign-in.html">Log In</a> <a className="dropdown-item" href="assets/sign-up.html">Register</a> <a className="dropdown-item" href="assets/#">Settings</a> </div>
+                  <div className="dropdown-menu mt-2 shadow" aria-labelledby="dropdownAccount"> <a className="dropdown-item" href="assets/sign-in.html">Log In</a> 
+                     <a className="dropdown-item" href="/register">Register</a> 
+                  
+                  <a className="dropdown-item" href="assets/#">Settings</a> </div>
                </div>
                <ul className="nav">
                   <li className="nav-item"> <a className="nav-link" href="assets/#">Contact</a> </li>
@@ -150,7 +155,7 @@ return (
                                  <li><a className="dropdown-item" href="assets/pages-404-1.html">404 Page</a></li>
                                  <li><a className="dropdown-item" href="assets/pages-coming-soon1.html">Coming Soon</a></li>
                                  <li><a className="dropdown-item" href="assets/pages-login1.html">Login </a></li>
-                                 <li><a className="dropdown-item" href="assets/pages-register.html">Registration </a></li>
+                                 <li><a className="dropdown-item" href="">Registration </a></li>
                               </ul>
                            </div>
                            <div className="col-sm-6 col-lg-3">

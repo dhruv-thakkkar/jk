@@ -23,6 +23,9 @@ mongoose
   });
 var db = mongoose.connection;
 
+/* app.use("/api/v1/auth/login", function (req, res) {
+  res.send('GET request to homepa1ge');
+}); */
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
