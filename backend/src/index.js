@@ -1,5 +1,6 @@
 var express = require("express");
 var authRouter = require("../routes/auth");
+var userRouter = require("../routes/userRouter");
 var bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 
@@ -10,6 +11,7 @@ var app = express();
 app.use(bodyParser.json());
 
 app.use("/api/v1/auth", authRouter);
+app.use("/api/v1/user", userRouter);
 
 const MONGODB_URL = "mongodb://127.0.0.1:27017/jk";
 mongoose
