@@ -72,6 +72,12 @@ Header 1 Area CSS
 ======================================
 */
 
+.home-banner-img{
+	/* ../assets/images/banner/03.jpg */
+	background:url('../images/banner/03.jpg')  no-repeat 65% 0% !important; 
+	background-size:cover !important;
+}
+
 .navbar-top {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
  padding: .2rem 0;

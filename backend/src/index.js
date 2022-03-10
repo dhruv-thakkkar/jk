@@ -3,12 +3,16 @@ var authRouter = require("../routes/auth");
 var userRouter = require("../routes/userRouter");
 var bodyParser = require("body-parser");
 const mongoose = require("mongoose");
+const cors = require("cors");
+
 
 const port = 3000;
 
 var app = express();
 
+app.use(cors());
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use("/api/v1/auth", authRouter);
 app.use("/api/v1/user", userRouter);
