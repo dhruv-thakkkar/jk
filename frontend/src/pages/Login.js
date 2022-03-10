@@ -1,23 +1,38 @@
 import React, { useState, useEffect } from "react";
-//import { useEffect } from 'react'
 import axios from "axios";
+import { withCookies, Cookies } from 'react-cookie';
+//import { useNavigate  } from "react-router-dom";
+//import { Redirect  } from "react-router-dom";
+
+const cookies = new Cookies();
+
 const Login = () => {
-  const ErrMsg = "";
+  const getToken = cookies.get('token');
+if(getToken){
+  window.location.href ='/';  
+}
+  //const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState([]);
-
   const submitForm = (e) => {
     window.scrollTo(0, 150);
     e.preventDefault();
     const newEntry = { email: email, password: password };
-    axios.defaults.withCredentials = true;
-    var url = "http://127.0.0.1:3000/api/v1/auth/login";
+    var url = "http://localhost:3000/api/v1/auth/login";
     axios
       .post(url, newEntry)
-      .then((response) => console.log("111111111111", response.data.data))
+      .then((response) => {
+        if(response.data.data.token){
+          cookies.set('token', response.data.data.token, { path: '/' });
+          window.location.href ='/'
+         // navigate('/');
+        }
+      })
       .catch((error) => {
-        setErrors(error.response.data.data);
+        if(error.response){
+          setErrors(error?.response?.data?.data);
+        }
       });
   };
 
@@ -33,11 +48,18 @@ const Login = () => {
                   {/* <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   </p> */}
-                  {errors.length <= 0
-                    ? null
-                    : errors.map((answer, i) => {
-                        return <div className="mt-3"> <div className="alert alert-danger text-center">{answer.msg}</div></div>;
-                      })}
+                  {errors && errors.length > 0
+                    ? errors.map((answer, i) => {
+                      return (
+                        <div className="mt-3">
+                          {" "}
+                          <div className="alert alert-danger text-center">
+                            {answer}
+                          </div>
+                        </div>
+                      );
+                    })
+                    : null}
                 </div>
                 <form action="" onSubmit={submitForm} className="login-form">
                   <div className="row">

@@ -44,7 +44,7 @@ exports.unauthorizedResponse = function (res, msg) {
 	var data = {
 		status: false,
 		message: msg,
-		data: message,
+		data: msg,
 
 	};
 	return res.status(401).json(data);

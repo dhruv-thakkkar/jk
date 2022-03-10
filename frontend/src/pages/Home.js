@@ -220,7 +220,7 @@ const Home = () => {
               <p className="subtitle text-secondary nopadding">Stay and eat like a local</p>
               <h1 className="paddtop1 font-weight lspace-sm">Popular Hotels</h1>
             </div>
-            <div className="col-md-4 d-lg-flex align-items-center justify-content-end"><a href="assets/#" className="blist text-sm ml-2"> See all Hotels<i className="fas fa-angle-double-right ml-2"></i></a></div>
+            <div className="col-md-4 d-lg-flex align-items-center justify-content-end"><a href="#" className="blist text-sm ml-2"> See all Hotels<i className="fas fa-angle-double-right ml-2"></i></a></div>
           </div>
           <div className="row">
             <div className="col-lg-4 col-md-6 col-sm-12 col-xs-12">
@@ -231,7 +231,7 @@ const Home = () => {
                 <div className="listroBoxmain">
                   <h3><a href="assets/hotel-detailed.html">Modern, Well-Appointed Room</a></h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
-                  <a className="address" href="assets/#">Get directions</a> </div>
+                  <a className="address" href="#">Get directions</a> </div>
                 <ul>
                   <li>
                     <p className="card-text text-muted"><span className="h4 text-primary">$80</span> / night</p>
@@ -252,7 +252,7 @@ const Home = () => {
                 <div className="listroBoxmain">
                   <h3><a href="assets/hotel-detailed.html">Modern, Well-Appointed Room</a></h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
-                  <a className="address" href="assets/#">Get directions</a> </div>
+                  <a className="address" href="#">Get directions</a> </div>
                 <ul>
                   <li>
                     <p className="card-text text-muted"><span className="h4 text-primary">$80</span> / night</p>
@@ -273,7 +273,7 @@ const Home = () => {
                 <div className="listroBoxmain">
                   <h3><a href="assets/hotel-detailed.html">Modern, Well-Appointed Room</a></h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
-                  <a className="address" href="assets/#">Get directions</a> </div>
+                  <a className="address" href="#">Get directions</a> </div>
                 <ul>
                   <li>
                     <p className="card-text text-muted"><span className="h4 text-primary">$80</span> / night</p>
@@ -294,7 +294,7 @@ const Home = () => {
                 <div className="listroBoxmain">
                   <h3><a href="assets/hotel-detailed.html">Modern, Well-Appointed Room</a></h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
-                  <a className="address" href="assets/#">Get directions</a> </div>
+                  <a className="address" href="#">Get directions</a> </div>
                 <ul>
                   <li>
                     <p className="card-text text-muted"><span className="h4 text-primary">$80</span> / night</p>
@@ -315,7 +315,7 @@ const Home = () => {
                 <div className="listroBoxmain">
                   <h3><a href="assets/hotel-detailed.html">Modern, Well-Appointed Room</a></h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
-                  <a className="address" href="assets/#">Get directions</a> </div>
+                  <a className="address" href="#">Get directions</a> </div>
                 <ul>
                   <li>
                     <p className="card-text text-muted"><span className="h4 text-primary">$80</span> / night</p>
@@ -336,7 +336,7 @@ const Home = () => {
                 <div className="listroBoxmain">
                   <h3><a href="assets/hotel-detailed.html">Modern, Well-Appointed Room</a></h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
-                  <a className="address" href="assets/#">Get directions</a> </div>
+                  <a className="address" href="#">Get directions</a> </div>
                 <ul>
                   <li>
                     <p className="card-text text-muted"><span className="h4 text-primary">$80</span> / night</p>
@@ -369,21 +369,21 @@ const Home = () => {
                 <div className="feature-box-icon"><i className="fas fa-route"></i></div>
                 <h3 className="feature-box-title">Best Travel Agent</h3>
                 <p className="feature-box-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <a className="mt-3" href="assets/#">See more!</a> </div>
+                <a className="mt-3" href="#">See more!</a> </div>
             </div>
             <div className="col-md-4 mt-30">
               <div className="featureBox icon-grad h-100">
                 <div className="feature-box-icon"><i className="fab fa-avianex"></i></div>
                 <h3 className="feature-box-title">Trust & Safety</h3>
                 <p className="feature-box-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <a className="mt-3" href="assets/#">See more!</a> </div>
+                <a className="mt-3" href="#">See more!</a> </div>
             </div>
             <div className="col-md-4 mt-30">
               <div className="featureBox icon-grad h-100">
                 <div className="feature-box-icon"><i className="fas fa-bullhorn"></i></div>
                 <h3 className="feature-box-title">Best Price Guarantee</h3>
                 <p className="feature-box-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <a className="mt-3" href="assets/#">See more!</a> </div>
+                <a className="mt-3" href="#">See more!</a> </div>
             </div>
           </div>
         </div>
@@ -396,7 +396,7 @@ const Home = () => {
         <p className="subtitle text-secondary nopadding">Stay and eat like a local</p>
         <h1 className="paddtop1 font-weight lspace-sm">Latest Cruises</h1>
       </div>
-      <div className="col-md-4 d-lg-flex align-items-center justify-content-end"><a href="assets/#" className="blist text-sm ml-2"> See all Cruises<i className="fas fa-angle-double-right ml-2"></i></a></div>
+      <div className="col-md-4 d-lg-flex align-items-center justify-content-end"><a href="#" className="blist text-sm ml-2"> See all Cruises<i className="fas fa-angle-double-right ml-2"></i></a></div>
     </div>
     <div className="row">
       <div className="swiper-container guides-slider-home-cruises"> 
@@ -417,7 +417,7 @@ const Home = () => {
                   <div className="TravelGo-category-content-title fl-wrap">
                     <div className="TravelGo-category-content-title-item">
                       <h3 className="title-sin_map"><a href="assets/hotel-detailed.html">Asia & African Cruise</a></h3>
-                      <div className="TravelGo-category-location fl-wrap"><a href="assets/#" className="map-item"><i className="fas fa-map-marker-alt"></i> 27th Brooklyn New York, USA</a> <span>$ 200</span> </div>
+                      <div className="TravelGo-category-location fl-wrap"><a href="#" className="map-item"><i className="fas fa-map-marker-alt"></i> 27th Brooklyn New York, USA</a> <span>$ 200</span> </div>
                     </div>
                   </div>
                   <p>Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
@@ -429,7 +429,7 @@ const Home = () => {
                   </ul>
                   <div className="TravelGo-category-footer fl-wrap">
                     <div className="TravelGo-category-price btn-grad"><span>2 days 3 nights</span></div>
-                    <div className="TravelGo-opt-list"> <a href="assets/#" className="single-map-item"><i className="fas fa-map-marker-alt"></i><span className="TravelGo-opt-tooltip">On the map</span></a> <a href="assets/#" className="TravelGo-js-favorite"><i className="fas fa-heart"></i><span className="TravelGo-opt-tooltip">Save</span></a> <a href="assets/#" className="TravelGo-js-booking"><i className="fas fa-retweet"></i><span className="TravelGo-opt-tooltip">Find Directions</span></a> </div>
+                    <div className="TravelGo-opt-list"> <a href="#" className="single-map-item"><i className="fas fa-map-marker-alt"></i><span className="TravelGo-opt-tooltip">On the map</span></a> <a href="#" className="TravelGo-js-favorite"><i className="fas fa-heart"></i><span className="TravelGo-opt-tooltip">Save</span></a> <a href="#" className="TravelGo-js-booking"><i className="fas fa-retweet"></i><span className="TravelGo-opt-tooltip">Find Directions</span></a> </div>
                   </div>
                 </div>
               </article>
@@ -450,7 +450,7 @@ const Home = () => {
                   <div className="TravelGo-category-content-title fl-wrap">
                     <div className="TravelGo-category-content-title-item">
                       <h3 className="title-sin_map"><a href="assets/hotel-detailed.html">Asia & African Cruise</a></h3>
-                      <div className="TravelGo-category-location fl-wrap"><a href="assets/#" className="map-item"><i className="fas fa-map-marker-alt"></i> 27th Brooklyn New York, USA</a> <span>$ 200</span> </div>
+                      <div className="TravelGo-category-location fl-wrap"><a href="#" className="map-item"><i className="fas fa-map-marker-alt"></i> 27th Brooklyn New York, USA</a> <span>$ 200</span> </div>
                     </div>
                   </div>
                   <p>Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
@@ -462,7 +462,7 @@ const Home = () => {
                   </ul>
                   <div className="TravelGo-category-footer fl-wrap">
                     <div className="TravelGo-category-price btn-grad"><span>2 days 3 nights</span></div>
-                    <div className="TravelGo-opt-list"> <a href="assets/#" className="single-map-item"><i className="fas fa-map-marker-alt"></i><span className="TravelGo-opt-tooltip">On the map</span></a> <a href="assets/#" className="TravelGo-js-favorite"><i className="fas fa-heart"></i><span className="TravelGo-opt-tooltip">Save</span></a> <a href="assets/#" className="TravelGo-js-booking"><i className="fas fa-retweet"></i><span className="TravelGo-opt-tooltip">Find Directions</span></a> </div>
+                    <div className="TravelGo-opt-list"> <a href="#" className="single-map-item"><i className="fas fa-map-marker-alt"></i><span className="TravelGo-opt-tooltip">On the map</span></a> <a href="#" className="TravelGo-js-favorite"><i className="fas fa-heart"></i><span className="TravelGo-opt-tooltip">Save</span></a> <a href="#" className="TravelGo-js-booking"><i className="fas fa-retweet"></i><span className="TravelGo-opt-tooltip">Find Directions</span></a> </div>
                   </div>
                 </div>
               </article>
@@ -483,7 +483,7 @@ const Home = () => {
                   <div className="TravelGo-category-content-title fl-wrap">
                     <div className="TravelGo-category-content-title-item">
                       <h3 className="title-sin_map"><a href="assets/hotel-detailed.html">Asia & African Cruise</a></h3>
-                      <div className="TravelGo-category-location fl-wrap"><a href="assets/#" className="map-item"><i className="fas fa-map-marker-alt"></i> 27th Brooklyn New York, USA</a> <span>$ 200</span> </div>
+                      <div className="TravelGo-category-location fl-wrap"><a href="#" className="map-item"><i className="fas fa-map-marker-alt"></i> 27th Brooklyn New York, USA</a> <span>$ 200</span> </div>
                     </div>
                   </div>
                   <p>Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
@@ -515,7 +515,7 @@ const Home = () => {
                   <div className="TravelGo-category-content-title fl-wrap">
                     <div className="TravelGo-category-content-title-item">
                       <h3 className="title-sin_map"><a href="assets/hotel-detailed.html">Asia & African Cruise</a></h3>
-                      <div className="TravelGo-category-location fl-wrap"><a href="assets/#" className="map-item"><i className="fas fa-map-marker-alt"></i> 27th Brooklyn New York, USA</a> <span>$ 200</span> </div>
+                      <div className="TravelGo-category-location fl-wrap"><a href="#" className="map-item"><i className="fas fa-map-marker-alt"></i> 27th Brooklyn New York, USA</a> <span>$ 200</span> </div>
                     </div>
                   </div>
                   <p>Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
@@ -527,7 +527,7 @@ const Home = () => {
                   </ul>
                   <div className="TravelGo-category-footer fl-wrap">
                     <div className="TravelGo-category-price btn-grad"><span>2 days 3 nights</span></div>
-                    <div className="TravelGo-opt-list"> <a href="assets/#" className="single-map-item"><i className="fas fa-map-marker-alt"></i><span className="TravelGo-opt-tooltip">On the map</span></a> <a href="assets/#" className="TravelGo-js-favorite"><i className="fas fa-heart"></i><span className="TravelGo-opt-tooltip">Save</span></a> <a href="assets/#" className="TravelGo-js-booking"><i className="fas fa-retweet"></i><span className="TravelGo-opt-tooltip">Find Directions</span></a> </div>
+                    <div className="TravelGo-opt-list"> <a href="#" className="single-map-item"><i className="fas fa-map-marker-alt"></i><span className="TravelGo-opt-tooltip">On the map</span></a> <a href="#" className="TravelGo-js-favorite"><i className="fas fa-heart"></i><span className="TravelGo-opt-tooltip">Save</span></a> <a href="#" className="TravelGo-js-booking"><i className="fas fa-retweet"></i><span className="TravelGo-opt-tooltip">Find Directions</span></a> </div>
                   </div>
                 </div>
               </article>
@@ -548,7 +548,7 @@ const Home = () => {
                   <div className="TravelGo-category-content-title fl-wrap">
                     <div className="TravelGo-category-content-title-item">
                       <h3 className="title-sin_map"><a href="assets/hotel-detailed.html">Asia & African Cruise</a></h3>
-                      <div className="TravelGo-category-location fl-wrap"><a href="assets/#" className="map-item"><i className="fas fa-map-marker-alt"></i> 27th Brooklyn New York, USA</a> <span>$ 200</span> </div>
+                      <div className="TravelGo-category-location fl-wrap"><a href="#" className="map-item"><i className="fas fa-map-marker-alt"></i> 27th Brooklyn New York, USA</a> <span>$ 200</span> </div>
                     </div>
                   </div>
                   <p>Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
@@ -560,7 +560,7 @@ const Home = () => {
                   </ul>
                   <div className="TravelGo-category-footer fl-wrap">
                     <div className="TravelGo-category-price btn-grad"><span>2 days 3 nights</span></div>
-                    <div className="TravelGo-opt-list"> <a href="assets/#" className="single-map-item"><i className="fas fa-map-marker-alt"></i><span className="TravelGo-opt-tooltip">On the map</span></a> <a href="assets/#" className="TravelGo-js-favorite"><i className="fas fa-heart"></i><span className="TravelGo-opt-tooltip">Save</span></a> <a href="assets/#" className="TravelGo-js-booking"><i className="fas fa-retweet"></i><span className="TravelGo-opt-tooltip">Find Directions</span></a> </div>
+                    <div className="TravelGo-opt-list"> <a href="#" className="single-map-item"><i className="fas fa-map-marker-alt"></i><span className="TravelGo-opt-tooltip">On the map</span></a> <a href="#" className="TravelGo-js-favorite"><i className="fas fa-heart"></i><span className="TravelGo-opt-tooltip">Save</span></a> <a href="#" className="TravelGo-js-booking"><i className="fas fa-retweet"></i><span className="TravelGo-opt-tooltip">Find Directions</span></a> </div>
                   </div>
                 </div>
               </article>
@@ -581,7 +581,7 @@ const Home = () => {
                   <div className="TravelGo-category-content-title fl-wrap">
                     <div className="TravelGo-category-content-title-item">
                       <h3 className="title-sin_map"><a href="assets/hotel-detailed.html">Asia & African Cruise</a></h3>
-                      <div className="TravelGo-category-location fl-wrap"><a href="assets/#" className="map-item"><i className="fas fa-map-marker-alt"></i> 27th Brooklyn New York, USA</a> <span>$ 200</span> </div>
+                      <div className="TravelGo-category-location fl-wrap"><a href="#" className="map-item"><i className="fas fa-map-marker-alt"></i> 27th Brooklyn New York, USA</a> <span>$ 200</span> </div>
                     </div>
                   </div>
                   <p>Sed interdum metus at nisi tempor laoreet. Integer gravida orci a justo sodales.</p>
@@ -593,7 +593,7 @@ const Home = () => {
                   </ul>
                   <div className="TravelGo-category-footer fl-wrap">
                     <div className="TravelGo-category-price btn-grad"><span>2 days 3 nights</span></div>
-                    <div className="TravelGo-opt-list"> <a href="assets/#" className="single-map-item"><i className="fas fa-map-marker-alt"></i><span className="TravelGo-opt-tooltip">On the map</span></a> <a href="assets/#" className="TravelGo-js-favorite"><i className="fas fa-heart"></i><span className="TravelGo-opt-tooltip">Save</span></a> <a href="assets/#" className="TravelGo-js-booking"><i className="fas fa-retweet"></i><span className="TravelGo-opt-tooltip">Find Directions</span></a> </div>
+                    <div className="TravelGo-opt-list"> <a href="#" className="single-map-item"><i className="fas fa-map-marker-alt"></i><span className="TravelGo-opt-tooltip">On the map</span></a> <a href="#" className="TravelGo-js-favorite"><i className="fas fa-heart"></i><span className="TravelGo-opt-tooltip">Save</span></a> <a href="#" className="TravelGo-js-booking"><i className="fas fa-retweet"></i><span className="TravelGo-opt-tooltip">Find Directions</span></a> </div>
                   </div>
                 </div>
               </article>

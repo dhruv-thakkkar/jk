@@ -16,11 +16,11 @@ const Footer = () => {
                             <div className="widget">
                                 <h6>Quick LInks</h6>
                                 <ul className="nav flex-column">
-                                    <li className="nav-item"><a className="nav-link" href="assets/#">About</a></li>
-                                    <li className="nav-item"><a className="nav-link" href="assets/#">Contact</a></li>
+                                    <li className="nav-item"><a className="nav-link" href="#">About</a></li>
+                                    <li className="nav-item"><a className="nav-link" href="#">Contact</a></li>
                                     <li className="nav-item"><a className="nav-link" href="assets/index.html">Home</a></li>
-                                    <li className="nav-item"><a className="nav-link" href="assets/#">Blog</a></li>
-                                    <li className="nav-item"><a className="nav-link" href="assets/#">Portfolio</a></li>
+                                    <li className="nav-item"><a className="nav-link" href="#">Blog</a></li>
+                                    <li className="nav-item"><a className="nav-link" href="#">Portfolio</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -28,11 +28,11 @@ const Footer = () => {
                             <div className="widget">
                                 <h6>Company</h6>
                                 <ul className="nav flex-column primary-hover">
-                                    <li className="nav-item"><a className="nav-link" href="assets/#">Help</a></li>
-                                    <li className="nav-item"><a className="nav-link" href="assets/#">Careers</a></li>
+                                    <li className="nav-item"><a className="nav-link" href="#">Help</a></li>
+                                    <li className="nav-item"><a className="nav-link" href="#">Careers</a></li>
                                     <li className="nav-item"><a className="nav-link" href="assets/index.html">Terms & Conditions</a></li>
-                                    <li className="nav-item"><a className="nav-link" href="assets/#">Privacy & Policy</a></li>
-                                    <li className="nav-item"><a className="nav-link" href="assets/#">FAQs</a></li>
+                                    <li className="nav-item"><a className="nav-link" href="#">Privacy & Policy</a></li>
+                                    <li className="nav-item"><a className="nav-link" href="#">FAQs</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -40,11 +40,11 @@ const Footer = () => {
                             <div className="widget">
                                 <h6>Support</h6>
                                 <ul className="nav flex-column primary-hover">
-                                    <li className="nav-item"><a className="nav-link" href="assets/#">Documentation</a></li>
-                                    <li className="nav-item"><a className="nav-link" href="assets/#">Knowledge Base</a></li>
+                                    <li className="nav-item"><a className="nav-link" href="#">Documentation</a></li>
+                                    <li className="nav-item"><a className="nav-link" href="#">Knowledge Base</a></li>
                                     <li className="nav-item"><a className="nav-link" href="assets/index.html">Forum</a></li>
-                                    <li className="nav-item"><a className="nav-link" href="assets/#">Contact</a></li>
-                                    <li className="nav-item"><a className="nav-link" href="assets/#">Terms of Use</a></li>
+                                    <li className="nav-item"><a className="nav-link" href="#">Contact</a></li>
+                                    <li className="nav-item"><a className="nav-link" href="#">Terms of Use</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -68,7 +68,7 @@ const Footer = () => {
             <div className="footer-copyright py-3">
                 <div className="container">
                     <div className="d-md-flex justify-content-between align-items-center py-3 text-center text-md-left">
-                        <div className="copyright-text">©2019 All Rights Reserved by <a href="assets/#!"> TravelGo.</a></div>
+                        <div className="copyright-text">©2019 All Rights Reserved by <a href="#!"> TravelGo.</a></div>
 
                     </div>
                 </div>

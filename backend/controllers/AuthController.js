@@ -68,7 +68,11 @@ exports.login = [
 		try {
 			const errors = validationResult(req);
 			if (!errors.isEmpty()) {
-				return apiResponse.validationErrorWithData(res, "Validation Error.", errors.array());
+        const ErrMsg = []
+        errors.array().forEach(element => {
+          ErrMsg.push(element.msg)
+        });
+				return apiResponse.validationErrorWithData(res, "Validation Error.", ErrMsg);
 			}else {
 				UserModel.findOne({email : req.body.email}).then(user => {
 					if (user) {
@@ -94,14 +98,14 @@ exports.login = [
 										userData.token = jwt.sign(jwtPayload, secret, jwtData);
 										return apiResponse.successResponseWithData(res,"Login Success.", userData);
 									}else {
-										return apiResponse.unauthorizedResponse(res, "Account is not active. Please contact admin.");
+										return apiResponse.unauthorizedResponse(res, ["Account is not active. Please contact admin."]);
 									}
 							}else{
-								return apiResponse.unauthorizedResponse(res, "Email or Password wrong.");
+								return apiResponse.unauthorizedResponse(res, ["Email or Password wrong."]);
 							}
 						});
 					}else{
-						return apiResponse.unauthorizedResponse(res, "Email or Password wrong.");
+						return apiResponse.unauthorizedResponse(res, ["Email or Password wrong."]);
 					}
 				});
 			}
