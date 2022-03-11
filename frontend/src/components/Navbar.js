@@ -4,12 +4,18 @@ import { withCookies, Cookies } from 'react-cookie';
 const cookies = new Cookies();
 //cookies.remove('token');
 const getToken = cookies.get('token');
-console.log(getToken)
 
 const LogoutHandler = () => {
    cookies.remove('token');
    window.location.href="/"
  };
+
+
+ let userDetails = JSON.parse(localStorage.getItem('user'));
+ let AccountText = "Account";
+ if(userDetails){
+   AccountText = userDetails.firstName;
+ }
 
 const Navbar = () => {
    return (
@@ -53,9 +59,10 @@ const Navbar = () => {
                      <div className="d-flex align-items-center">
                         {getToken ? (
                            <div className="dropdown">
-                              <a className="dropdown-toggle" href="#" role="button" id="dropdownAccount" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i className="far fa-user mr-2"></i>Account </a>
+                              <a className="dropdown-toggle" href="#" role="button" id="dropdownAccount" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i className="far fa-user mr-2"></i>{AccountText} </a>
                               <div className="dropdown-menu mt-2 shadow" aria-labelledby="dropdownAccount">
                                  <Link className="dropdown-item" to="/setting">My Booking</Link>
+                                 <Link className="dropdown-item" to="/profile">My Profile</Link>
                                  <Link className="dropdown-item" to="/privacy">Settings</Link>
                                  <button className="dropdown-item" onClick={LogoutHandler}>Logout</button>
 
@@ -65,7 +72,10 @@ const Navbar = () => {
                         ) : (null)}
                         <ul className="nav">
                            {!getToken ? (
+                              <>
                               <li className="nav-item"> <Link className="nav-link" to="/login">Log In</Link> </li>
+                              <li className="nav-item"> <Link className="nav-link" to="/register">Register</Link> </li>
+                              </>
                            ) : (null)}
                            <li className="nav-item"> <a className="nav-link" href="#">Contact</a> </li>
                         </ul>

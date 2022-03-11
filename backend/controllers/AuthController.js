@@ -9,7 +9,7 @@ exports.register = [
   body("firstName").notEmpty().withMessage("First Name is Required"),
   body("password")
     .isLength({ min: 6 })
-    .withMessage("must be at least 6 chars long"),
+    .withMessage("Password must be at least 6 chars long"),
   body("email")
     .isEmail()
     .withMessage("Your email is invalid")
@@ -24,11 +24,15 @@ exports.register = [
   (req, res) => {
     try {
       const errors = validationResult(req);
+      const ErrMsg = []
+      errors.array().forEach(element => {
+        ErrMsg.push(element.msg)
+      });
       if (!errors.isEmpty()) {
         return apiResponse.validationErrorWithData(
           res,
           "Validation Error.",
-          errors.array()
+          ErrMsg
         );
       } else {
         //hash input password
@@ -47,11 +51,21 @@ exports.register = [
               firstName: user.firstName,
               email: user.email,
             };
-            return apiResponse.successResponseWithData(
-              res,
-              "Registration Success.",
-              userData
-            );
+
+              /*  */
+              //Prepare JWT token for authentication
+              const jwtPayload = userData;
+              const jwtData = {
+                expiresIn: "2 hours",
+              };
+              const secret ="dhruvthakkar";
+              //Generated JWT token with Payload and secret.
+              userData.token = jwt.sign(jwtPayload, secret, jwtData);
+              return apiResponse.successResponseWithData(res,"Login Success.", userData);
+              
+              /*  */
+
+            //return apiResponse.successResponseWithData(res,"Registration Success.",userData);
           });
         });
       }

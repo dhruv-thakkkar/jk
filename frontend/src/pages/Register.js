@@ -1,23 +1,25 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { Cookies } from "react-cookie";
-
 const cookies = new Cookies();
 
-const Login = () => {
+const Register = () => {
   const getToken = cookies.get("token");
   if (getToken) {
     window.location.href = "/";
   }
-  //const navigate = useNavigate();
+
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState([]);
+
   const submitForm = (e) => {
     window.scrollTo(0, 150);
     e.preventDefault();
-    const newEntry = { email: email, password: password };
-    var url = "http://localhost:3000/api/v1/auth/login";
+    const newEntry = { firstName: name, email: email, password: password };
+    var url = "http://localhost:3000/api/v1/auth/register";
+
     axios
       .post(url, newEntry)
       .then((response) => {
@@ -26,7 +28,6 @@ const Login = () => {
           localStorage.setItem('jwt', response.data.data.token)
           localStorage.setItem('user', JSON.stringify(response.data.data))
           window.location.href = "/";
-          // navigate('/');
         }
       })
       .catch((error) => {
@@ -38,16 +39,13 @@ const Login = () => {
 
   return (
     <div>
-      <section className="login-area">
+      <section className="registration">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <div className="login-box">
-                <div className="login-top">
-                  <h3 className="text-center">Enter your login credentials.</h3>
-                  {/* <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  </p> */}
+              <div className="registration-box">
+                <div className="reg-top">
+                  <h3 className="">Create An Account.</h3>
                   {errors && errors.length > 0
                     ? errors.map((answer, i) => {
                         return (
@@ -60,64 +58,74 @@ const Login = () => {
                         );
                       })
                     : null}
+                  {/* <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> */}
                 </div>
-                <form action="" onSubmit={submitForm} className="login-form">
+                <form onSubmit={submitForm} className="reg-form" action="#">
                   <div className="row">
+                    <div className="col-md-6 name">
+                      <label>Name</label>
+                      <input
+                        type="text"
+                        name="name"
+                        placeholder="Enter your name here"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+
+                      />
+                    </div>
+                    <div className="col-md-6 srname">
+                      <label>Phone Number</label>
+                      <input
+                        type="text"
+                        name="srname"
+                        placeholder="Enter phone number here"
+                      />
+                    </div>
                     <div className="col-md-12 email">
                       <label>Email</label>
                       <input
                         type="text"
                         name="email"
-                        placeholder="Enter your email here"
+                        placeholder="Enter Email here"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
+
                       />
                     </div>
                     <div className="col-md-12 password">
                       <label>Password</label>
                       <input
-                        defaultValue={password}
-                        onChange={(e) => setPassword(e.target.value)}
                         type="password"
                         name="password"
-                        placeholder="Enter password"
+                        placeholder="Enter your password here"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
                       />
                     </div>
-                    <div className="col-md-12 d-flex justify-content-between">
-                      <div className="chqbox">
-                        <input type="checkbox" name="rememberme" id="rmme" />
-                        <label htmlFor="rmme">Remember Me</label>
-                      </div>
-                      <div className="forget-btn">
-                        <a href="#">Forget Password?</a>
-                      </div>
+                    <div className="col-md-12 chqbox">
+                      <input type="checkbox" name="terms" id="rc-email" />
+                      <label htmlFor="rc-email">
+                        Yes, I want to receive emails.
+                      </label>
+                    </div>
+                    <div className="col-md-12 chqbox chqbox2">
+                      <input type="checkbox" name="terms" id="term" />
+                      <label htmlFor="term">
+                        I have read &amp; agree with{" "}
+                        <span>Terms &amp; Conditions</span>.
+                      </label>
                     </div>
                     <div className="col-md-12">
                       <button type="submit" name="button">
-                        Sign In
+                        Create Account
                       </button>
                     </div>
                   </div>
                 </form>
                 <div className="login-btm text-center">
-                  <p>or sign in with</p>
-                  <ul className="list-unstyled list-inline">
-                    <li className="list-inline-item">
-                      <a href="#">
-                        <i className="fab fa-google"></i>
-                      </a>
-                    </li>
-                    <li className="list-inline-item">
-                      <a href="#">
-                        <i className="fab fa-facebook"></i>
-                      </a>
-                    </li>
-                    <li className="list-inline-item">
-                      <a href="#">
-                        <i className="fab fa-twitter"></i>
-                      </a>
-                    </li>
-                  </ul>
+                  <p>
+                    Already have an account ?<a href="/login">Log in</a>
+                  </p>
                 </div>
               </div>
             </div>
@@ -127,4 +135,4 @@ const Login = () => {
     </div>
   );
 };
-export default Login;
+export default Register;

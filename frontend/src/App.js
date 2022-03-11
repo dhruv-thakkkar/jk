@@ -4,9 +4,9 @@ import Footer from './components/Footer';
 import About from './pages/About';
 import Home from './pages/Home';
 import Login from './pages/Login';
+import Register from './pages/Register';
 function App() {
   return (
-    //<BrowserRouter basename='/tutorial'> //http://localhost:3000/tutorial/about
     <BrowserRouter >
     <div className="App">
     <Navbar />
@@ -15,6 +15,7 @@ function App() {
     <Route path="/" element={<Home />} />
     <Route path="/about" element={<About />} />
     <Route path="/login" element={<Login />} />
+    <Route path="/register" element={<Register />} />
     </Routes>
     <Footer />
 
