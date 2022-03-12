@@ -1,6 +1,6 @@
-import React from "react";
+import { React, useState } from "react";
 import { Link } from "react-router-dom";
-import {  Cookies } from "react-cookie";
+import { Cookies } from "react-cookie";
 import axios from "axios";
 const cookies = new Cookies();
 //cookies.remove('token');
@@ -14,28 +14,34 @@ let AccountText = "Account";
 if (userDetails) {
   AccountText = userDetails.firstName;
 }
-let Categories = [];
-var url = "http://localhost:3000/api/v1/categories/get";
-let newCategory = [];
-axios
-  .post(url, "")
-  .then((response) => {
-    if (response.data) {
-      if (response.data.data.length > 0) {
-        Categories = response.data.data;
-        let ceel = Math.ceil(Categories.length / 5);
-        for (let i = 0; i < ceel; i++) {
-          newCategory.push(Categories.splice(0, ceel + 1));
+
+const Navbar = () => {
+  let finalCat = [];
+
+  const [newCategory, SetCategory] = useState([]);
+  let Categories = [];
+  var url = "http://localhost:3000/api/v1/categories/get";
+  //let newCategory = [];
+  axios
+    .post(url, "")
+    .then((response) => {
+      if (response.data) {
+        if (response.data.data.length > 0) {
+          Categories = response.data.data;
+          let ceel = Math.ceil(Categories.length / 5);
+          for (let i = 0; i < ceel; i++) {
+            finalCat.push(Categories.splice(0, ceel + 1));
+          }
+          SetCategory((e) => finalCat)
         }
       }
-    }
-  })
-  .catch((error) => {
-    if (error.response) {
-      //setErrors(error?.response?.data?.data);
-    }
-  });
-const Navbar = () => {
+    })
+    .catch((error) => {
+      if (error.response) {
+        //setErrors(error?.response?.data?.data);
+      }
+    });
+
   return (
     <div>
       <header className="header-static navbar-sticky navbar-light shadow">
@@ -290,24 +296,24 @@ const Navbar = () => {
                   <div className="dropdown-menu" aria-labelledby="elementsMenu">
                     <div className="container">
                       <div className="row">
+                        {console.log(newCategory)}
                         {!newCategory
                           ? null
-                          : newCategory.map(function (arr,i) {
-                              return (
-                                <div className="col-sm-6 col-lg-3">
-                                  <ul key={i} className="list-unstyled">
-                                    {arr.map(function (ele) {
-                                      console.log(ele)
-                                       return(
-                                         <p>{ele.category_name}</p>
-                                          //<li key={ele._id}><Link key={ele._id} className="dropdown-item" to="asds">{ele.category_name}</Link></li>
-                                       )
-                                    })}
-                                    {/* <p>{(a)}</p> */}
-                                  </ul>
-                                </div>
-                              );
-                            })}
+                          : newCategory.map(function (arr, i) {
+                            return (
+                              <div className="col-sm-6 col-lg-3">
+                                <ul key={i} className="list-unstyled">
+                                  {arr.map(function (ele) {
+                                    console.log(ele)
+                                    return (
+                                      <li key={ele._id}><Link key={ele._id} className="dropdown-item" to={ele._id}>{ele.category_name}</Link></li>
+                                    )
+                                  })}
+                                  {/* <p>{(a)}</p> */}
+                                </ul>
+                              </div>
+                            );
+                          })}
 
                         {/* <div className="col-sm-6 col-lg-3">
                                           <ul className="list-unstyled">
