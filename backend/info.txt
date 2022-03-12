@@ -1,0 +1,38 @@
+Categories:
+Internationl
+Domestic
+Hilly Adventure 
+Best of India
+Solo Trip
+Family
+Honeymoon
+Couple Tour
+Summer Vacation Special
+Winter Mountains
+Customized
+Weekend Friendly
+Pocket Friendly
+Delux Only
+Top Trending
+Beach Lovers
+Bullet Only
+
+[
+    {"category_name":"Internationl", "sortOrder": 0, "status" : 1},
+    {"category_name":"Domestic", "sortOrder": 0, "status" : 1},
+    {"category_name":"Hilly Adventure", "sortOrder": 0, "status" : 1},
+    {"category_name":"Best of India", "sortOrder": 0, "status" : 1},
+    {"category_name":"Solo Trip", "sortOrder": 0, "status" : 1},
+    {"category_name":"Family", "sortOrder": 0, "status" : 1},
+    {"category_name":"Honeymoon Special", "sortOrder": 0, "status" : 1},
+    {"category_name":"Couple's Tour", "sortOrder": 0, "status" : 1},
+    {"category_name":"Summer Vacation Special", "sortOrder": 0, "status" : 1},
+    {"category_name":"Winter Mountains", "sortOrder": 0, "status" : 1},
+    {"category_name":"Customized", "sortOrder": 0, "status" : 1},
+    {"category_name":"Weekend Friendly", "sortOrder": 0, "status" : 1},
+    {"category_name":"Pocket Friendly", "sortOrder": 0, "status" : 1},
+    {"category_name":"Delux Only", "sortOrder": 0, "status" : 1},
+    {"category_name":"Top Trending", "sortOrder": 0, "status" : 1},
+    {"category_name":"Beach Lovers", "sortOrder": 0, "status" : 1},
+    {"category_name":"Bike Riding Trip", "sortOrder": 0, "status" : 1}
+ ]
