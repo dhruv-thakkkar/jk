@@ -36,3 +36,40 @@ Bullet Only
     {"category_name":"Beach Lovers", "sortOrder": 0, "status" : 1},
     {"category_name":"Bike Riding Trip", "sortOrder": 0, "status" : 1}
  ]
+
+
+ //Packages.
+ Name
+ country_id
+ cateogory_ids
+ star
+ short Desc
+ long desc  
+ amenities_id
+ price
+ days
+ nights
+ 
+
+ Image table
+ for -> packagae ,category_name
+ package_id
+
+ ammenities
+ https://www.tourmyindia.com/states/rajasthan/6nights-7days-golden-triangle-tour.html
+
+ Itinerary table
+ package_id
+ heading ->day1,day,2
+ desc-> ckeditor
+
+ amenities table
+
+ Wifi
+ Toiletteries
+ Cable TV
+ Air conditioning
+ Heating
+ Toiletteries
+ Equipped Kitchen
+ Desk for work

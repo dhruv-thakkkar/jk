@@ -2,6 +2,7 @@ var express = require("express");
 var authRouter = require("../routes/auth");
 var userRouter = require("../routes/userRouter");
 var categoriesRoute = require("../routes/categoriesRoute");
+var packagesRoute = require("../routes/packagesRoute");
 var bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const cors = require("cors");
@@ -13,11 +14,12 @@ var app = express();
 
 app.use(cors());
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use("/api/v1/auth", authRouter);
 app.use("/api/v1/user", userRouter);
 app.use("/api/v1/categories", categoriesRoute);
+app.use("/api/v1/packages", packagesRoute);
 
 const MONGODB_URL = "mongodb://127.0.0.1:27017/jk";
 mongoose

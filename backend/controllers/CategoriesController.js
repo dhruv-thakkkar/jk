@@ -1,6 +1,5 @@
 const apiResponse = require("../helpers/apiResponse");
 const CategoriesModel = require("../models/CategoriesModel");
-const { ObjectId } = require("mongodb"); // or ObjectID
 
 exports.getCategories = [
   async (req, res) => {
