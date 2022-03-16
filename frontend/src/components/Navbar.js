@@ -296,7 +296,6 @@ const Navbar = () => {
                   <div className="dropdown-menu" aria-labelledby="elementsMenu">
                     <div className="container">
                       <div className="row">
-                        {console.log(newCategory)}
                         {!newCategory
                           ? null
                           : newCategory.map(function (arr, i) {
@@ -304,7 +303,6 @@ const Navbar = () => {
                               <div className="col-sm-6 col-lg-3">
                                 <ul key={i} className="list-unstyled">
                                   {arr.map(function (ele) {
-                                    console.log(ele)
                                     return (
                                       <li key={ele._id}><Link key={ele._id} className="dropdown-item" to={ele._id}>{ele.category_name}</Link></li>
                                     )

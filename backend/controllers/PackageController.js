@@ -66,8 +66,8 @@ exports.getPackageById =[
   async (req, res) => {
     try {
       const reqBody = req.body;
-  
       let ans = await packageServices.FindPackageById(ObjectId(reqBody._id));
+      console.log(ans)
       return apiResponse.successResponseWithData(res, ans);
     } catch (err) {
       console.log(err)

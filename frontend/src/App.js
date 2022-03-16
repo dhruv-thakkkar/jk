@@ -5,6 +5,7 @@ import About from './pages/About';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import PackageDetails from './pages/PackageDetails';
 function App() {
   return (
     <BrowserRouter >
@@ -16,6 +17,7 @@ function App() {
     <Route path="/about" element={<About />} />
     <Route path="/login" element={<Login />} />
     <Route path="/register" element={<Register />} />
+    <Route path="/package/:id"element={<PackageDetails />}  />
     </Routes>
     <Footer />
 
