@@ -1,9 +1,7 @@
-import React, { useState, useEffect } from "react";
+import { React, useState } from "react";
 import { Link } from "react-router-dom";
 import { Cookies } from "react-cookie";
 import axios from "axios";
-
-
 const cookies = new Cookies();
 //cookies.remove('token');
 const getToken = cookies.get("token");
@@ -16,39 +14,34 @@ let AccountText = "Account";
 if (userDetails) {
   AccountText = userDetails.firstName;
 }
-function Navbar() {
+
+const Navbar = () => {
+  let finalCat = [];
 
   const [newCategory, SetCategory] = useState([]);
-  const fetchData = () => {
-    let finalCat = [];
-
-    let Categories = [];
-    var url = "http://localhost:3000/api/v1/categories/get";
-    //let newCategory = [];
-    axios
-      .post(url, "")
-      .then((response) => {
-        if (response.data) {
-          if (response.data.data.length > 0) {
-            Categories = response.data.data;
-            let ceel = Math.ceil(Categories.length / 5);
-            for (let i = 0; i < ceel; i++) {
-              finalCat.push(Categories.splice(0, ceel + 1));
-            }
-            SetCategory((e) => finalCat)
+  let Categories = [];
+  var url = "http://localhost:3000/api/v1/categories/get";
+  //let newCategory = [];
+  axios
+    .post(url, "")
+    .then((response) => {
+      if (response.data) {
+        if (response.data.data.length > 0) {
+          Categories = response.data.data;
+          let ceel = Math.ceil(Categories.length / 5);
+          for (let i = 0; i < ceel; i++) {
+            finalCat.push(Categories.splice(0, ceel + 1));
           }
+          SetCategory((e) => finalCat)
         }
-      })
-      .catch((error) => {
-        if (error.response) {
-          //setErrors(error?.response?.data?.data);
-        }
-      });
-  };
+      }
+    })
+    .catch((error) => {
+      if (error.response) {
+        //setErrors(error?.response?.data?.data);
+      }
+    });
 
-  useEffect(() => {
-    fetchData();
-  }, []);
   return (
     <div>
       <header className="header-static navbar-sticky navbar-light shadow">
@@ -307,11 +300,11 @@ function Navbar() {
                           ? null
                           : newCategory.map(function (arr, i) {
                             return (
-                              <div key={i} className="col-sm-6 col-lg-3">
-                                <ul className="list-unstyled">
+                              <div className="col-sm-6 col-lg-3">
+                                <ul key={i} className="list-unstyled">
                                   {arr.map(function (ele) {
                                     return (
-                                      <li key={ele._id}><Link className="dropdown-item" to={"packages/"+ele._id}>{ele.category_name}</Link></li>
+                                      <li key={ele._id}><Link key={ele._id} className="dropdown-item" to={ele._id}>{ele.category_name}</Link></li>
                                     )
                                   })}
                                   {/* <p>{(a)}</p> */}
@@ -386,7 +379,6 @@ function Navbar() {
         </nav>
       </header>
     </div>
-
   );
-}
+};
 export default Navbar;

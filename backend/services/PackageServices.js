@@ -3,15 +3,29 @@ const PackageModel = require("../models/PackageModel");
 const { ObjectId } = require("mongodb"); // or ObjectID
 
 module.exports = {
-  FindPackageById(id) {
-    console.log("inside...");
-
-    let result = PackageModel.aggregate([
-      {
-        $match: {
-          _id: new ObjectId("623045394d9fe5abbe9cae0a"),
+  FindPackageById(reqBody) {
+    let pipeline = [];
+    if (reqBody.package_id) {
+      pipeline.push(
+        {
+          $match: {
+            _id: new ObjectId(reqBody.package_id),
+          },
         },
-      },
+      )
+    }
+    if (reqBody.category_id) {
+      console.log(reqBody.category_id)
+      pipeline.push(
+        {
+          $match: {
+            cateogory_ids: new ObjectId(reqBody.category_id),
+          },
+        },
+      )
+    }
+
+    pipeline.push(
       {
         $lookup: {
           from: "package_images",
@@ -36,7 +50,16 @@ module.exports = {
           as: "country",
         },
       },
-    ]);
+      {
+        $lookup: {
+          from: "package_amenities",
+          localField: "_id",
+          foreignField: "package_id",
+          as: "amenities",
+        },
+      },
+    )
+    let result = PackageModel.aggregate(pipeline);
     return result;
   },
 };

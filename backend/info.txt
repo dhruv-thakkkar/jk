@@ -73,3 +73,13 @@ Bullet Only
  Toiletteries
  Equipped Kitchen
  Desk for work
+
+ [
+    {"title":"Wifi", "code": "fa fa-wifi","sortOrder": 0, "status" : 1},
+    {"title":"Toiletteries", "code": "fa fa-bath","sortOrder": 0, "status" : 1},
+    {"title":"Cable TV", "code": "fa fa-tv","sortOrder": 0, "status" : 1},
+    {"title":"Air conditioning", "code": "fa fa-snowflake","sortOrder": 0, "status" : 1},
+    {"title":"Heating", "code": "fa fa-thermometer","sortOrder": 0, "status" : 1},
+    {"title":"Equipped Kitchen", "code": "fa fa-utensils","sortOrder": 0, "status" : 1},
+    {"title":"Desk for work", "code": "fa fa-laptop","sortOrder": 0, "status" : 1},
+ ]
