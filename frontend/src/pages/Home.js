@@ -6,8 +6,8 @@ const Home = () => {
         <div className="container h-100">
           <div className="row justify-content-between align-items-center h-100" >
             <div className="col-md-8 mb-7">
-              <h4>Lorem ipsum dolor sit amet</h4>
-              <h1 className="display-4 font-weight-bold">Sed ut perspiciatis unde omnis </h1>
+              <h4>-Saint Augustine</h4>
+              <h1 className="display-4 font-weight-bold">The world is a book, and those who do not travel read only one page.</h1>
             </div>
           </div>
         </div>

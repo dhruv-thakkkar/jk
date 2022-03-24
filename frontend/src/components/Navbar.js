@@ -243,10 +243,11 @@ function Navbar() {
         <nav className="navbar navbar-expand-lg">
           <div className="container">
             <Link className="navbar-brand" to="/">
-              <img
+              <div className="jk-text" >𝐉𝐊 𝐓𝐑𝐀𝐕𝐄𝐋 𝐖𝐎𝐑𝐋𝐃</div>
+              {/* <img
                 src="http://localhost:4000/assets/images/logo-header.png"
                 alt="travelgo"
-              />{" "}
+              /> */}{" "}
             </Link>
             <button
               className="navbar-toggler ml-auto"
@@ -265,11 +266,6 @@ function Navbar() {
                 <li className="nav-item active">
                   <Link id="demosMenu1" className="nav-link" to="/">
                     Home
-                  </Link>
-                </li>
-                <li className="nav-item ">
-                  <Link id="demosMenu2" className="nav-link" to="/about">
-                    About
                   </Link>
                 </li>
                 {/* 
@@ -359,6 +355,11 @@ function Navbar() {
                     </div>
                   </div>
                 </li>
+                <li className="nav-item ">
+                  <Link id="demosMenu2" className="nav-link" to="/about">
+                    About
+                  </Link>
+                </li>
               </ul>
             </div>
             <div className="navbar-nav">
@@ -377,7 +378,7 @@ function Navbar() {
               </div>
               <div className="nav-item border-0 d-none d-lg-inline-block align-self-center">
                 {" "}
-                <a href="!#" className=" btn btn-sm btn-grad text-white mb-0">
+                <a href="#" className=" btn btn-sm btn-grad text-white mb-0">
                   Online Booking
                 </a>{" "}
               </div>

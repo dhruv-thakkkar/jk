@@ -71,10 +71,21 @@ This file contains the common styles of this theme.
 Header 1 Area CSS
 ======================================
 */
-
+.jk-text{
+	font-family: "Times New Roman", Times, serif;
+	font-size: 30px;
+	letter-spacing: 0px;
+	word-spacing: 1.6px;
+	color: #EDBF20;
+	font-weight: 700;
+	text-decoration: none;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: uppercase;
+}
 .home-banner-img{
 	/* ../assets/images/banner/03.jpg */
-	background:url('../images/banner/03.jpg')  no-repeat 65% 0% !important; 
+	background:url('../images/banner/back-8.jpg')  no-repeat 65% 0% !important; 
 	background-size:cover !important;
 }
 

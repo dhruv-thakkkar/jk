@@ -6,10 +6,9 @@ const Footer = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-3 col-sm-6 order-sm-1">
-                            <div className="widget address"> <a href="assets/index.html" className="footer-logo mb-3 d-block">
-                                <img src="assets/images/logo-footer.png" />
-                            </a>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <div className="widget address"> 
+                            <div className="text-uppercase font-weight-bold">JK TRAVEL WORLD</div>
+                                <p>is one of the leading businesses in the Tour Operators. Also known for Flight/Rail bookings & Tour Packages.</p>
                             </div>
                         </div>
                         <div className="col-md-2 col-sm-4 order-sm-3">
@@ -51,12 +50,12 @@ const Footer = () => {
                         <div className="col-md-3 col-sm-6 order-sm-2">
                             <div className="widget address">
                                 <ul className="list-unstyled">
-                                    <li className="media mb-3"><i className="fas fa-map-marked-alt mr-3 display-8"></i>216 Coburn Shahi Road Mumbai, Near Center Road, IL 54785. </li>
-                                    <li className="media mb-3"><i className="mr-3 display-8 fas fa-headphones-alt"></i> {process.env.REACT_APP_PHONE_NUMBER}</li>
+                                    <li className="media mb-3"><i className="fas fa-map-marked-alt mr-3 display-8"></i>5 Ashwamegh Complex, Nr.Mithakhali Underbidge,Navrangupura, Ahmedabad, India. </li>
+                                    <li className="media mb-3"><i className="mr-3 display-8 fas fa-phone"></i> {process.env.REACT_APP_PHONE_NUMBER}</li>
                                     <li className="media mb-3"><i className="mr-3 display-8 far fa-envelope"></i> {process.env.REACT_APP_EMAIL}</li>
                                     <li className="media mb-3"><i className="mr-3 display-8 far fa-clock"></i>
-                                        <p>Mon - Fri: <strong>09:00 - 21:00</strong> <br />
-                                            Sat & Sun: <strong>Closed</strong></p>
+                                        <p><strong>24/7</strong> Service Available
+                                            </p>
                                     </li>
                                 </ul>
                             </div>
@@ -68,7 +67,7 @@ const Footer = () => {
             <div className="footer-copyright py-3">
                 <div className="container">
                     <div className="d-md-flex justify-content-between align-items-center py-3 text-center text-md-left">
-                        <div className="copyright-text">©2019 All Rights Reserved by <a href="#!"> TravelGo.</a></div>
+                        <div className="copyright-text">©2022-2023 All Rights Reserved by <a href="#!"> JK TRAVEL WORLD.</a></div>
 
                     </div>
                 </div>

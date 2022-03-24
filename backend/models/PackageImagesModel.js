@@ -5,7 +5,7 @@ const { ObjectId } = require("mongodb"); // or ObjectID
 const PackageImages = new mongoose.Schema(
   {
     package_id: { type: mongoose.Schema.ObjectId, required: true },
-    image_url: { type: String, required : true },
+    default: { type: Number, required : true, default : false },
     alt_text: { type: String, required : false },
     sortOrder: { type: Number, default: 0 },
     status: { type: Number, default: 1 }, //0,1,2
