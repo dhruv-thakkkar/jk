@@ -6,23 +6,23 @@ module.exports = {
   FindPackageById(reqBody) {
     let pipeline = [];
     if (reqBody.package_id) {
-      pipeline.push(
-        {
-          $match: {
-            _id: new ObjectId(reqBody.package_id),
-          },
+      pipeline.push({
+        $match: {
+          _id: new ObjectId(reqBody.package_id),
         },
-      )
+      });
     }
     if (reqBody.category_id) {
-      console.log(reqBody.category_id)
-      pipeline.push(
-        {
-          $match: {
-            cateogory_ids: new ObjectId(reqBody.category_id),
-          },
+      pipeline.push({
+        $match: {
+          cateogory_ids: new ObjectId(reqBody.category_id),
         },
-      )
+      });
+    }
+    if (reqBody.random) {
+      pipeline.push({
+        $sample: { size: reqBody.random },
+      });
     }
 
     pipeline.push(
@@ -57,8 +57,8 @@ module.exports = {
           foreignField: "package_id",
           as: "amenities",
         },
-      },
-    )
+      }
+    );
     let result = PackageModel.aggregate(pipeline);
     return result;
   },

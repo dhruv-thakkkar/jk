@@ -80,6 +80,8 @@ exports.getPackageById = [
         ans[0].selectedAmenities = sAmen; //adding selected amenites as an array. 
       } else if (reqBody.category_id) {
         ans = await packageServices.FindPackageById((reqBody));
+      } else if (reqBody.random) {
+        ans = await packageServices.FindPackageById((reqBody));
       }
       return apiResponse.successResponseWithData(res, ans);
     } catch (err) {
